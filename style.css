@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	background-color: #ffffff;
+}
+
+button {
+	padding: 12px 22px;
+	border: 1px solid #d9d9d9;
+	border-radius: 8px;
+	background-color: #f7f7f7;
+	cursor: pointer;
+}
+
+button a {
+	text-decoration: none;
+	color: #222222;
+	font-size: 16px;
+	font-weight: 600;
+}
