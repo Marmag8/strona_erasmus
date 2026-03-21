@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html class="light" lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Erasmus+ Italy 2026 - Podsumowanie</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&amp;display=swap"
+    rel="stylesheet">
+  <!-- Material Symbols -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-surface": "#181c20",
+            "secondary": "#006e24",
+            "surface-dim": "#d7dae0",
+            "inverse-surface": "#2d3135",
+            "primary": "#003b72",
+            "on-tertiary-container": "#f9bc00",
+            "on-primary": "#ffffff",
+            "secondary-container": "#95f598",
+            "on-tertiary-fixed-variant": "#5b4300",
+            "inverse-on-surface": "#eef1f7",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-fixed-variant": "#005319",
+            "inverse-primary": "#a6c8ff",
+            "on-primary-fixed-variant": "#004787",
+            "primary-fixed-dim": "#a6c8ff",
+            "surface-container": "#ebeef4",
+            "tertiary-fixed": "#ffdf9e",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed": "#002106",
+            "surface": "#f7f9ff",
+            "surface-tint": "#1d5fa8",
+            "secondary-fixed": "#98f89b",
+            "on-primary-fixed": "#001c3b",
+            "primary-container": "#00529b",
+            "error": "#ba1a1a",
+            "surface-container-low": "#f1f4fa",
+            "surface-container-high": "#e5e8ee",
+            "on-background": "#181c20",
+            "tertiary": "#4d3800",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-fixed": "#261a00",
+            "outline-variant": "#c2c6d3",
+            "on-error-container": "#93000a",
+            "primary-fixed": "#d5e3ff",
+            "on-primary-container": "#a5c7ff",
+            "tertiary-container": "#694e00",
+            "on-secondary": "#ffffff",
+            "outline": "#727782",
+            "secondary-fixed-dim": "#7cdb81",
+            "tertiary-fixed-dim": "#fabd00",
+            "background": "#f7f9ff",
+            "surface-variant": "#dfe3e8",
+            "surface-container-highest": "#dfe3e8",
+            "on-error": "#ffffff",
+            "surface-bright": "#f7f9ff",
+            "on-surface-variant": "#424751",
+            "on-secondary-container": "#037327"
+          },
+          fontFamily: {
+            "headline": ["Plus Jakarta Sans"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .plus-jakarta-sans {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+
+<body class="bg-surface text-on-surface">
+  <!-- TopNavBar -->
+  <nav
+    class="fixed top-0 w-full z-50 rounded-b-2xl bg-white/70 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,59,114,0.06)]">
+    <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+      <div class="text-xl font-extrabold text-blue-900 tracking-tighter plus-jakarta-sans">
+        Erasmus+ 2026: Rimini</div>
+      <div class="hidden md:flex items-center gap-8 plus-jakarta-sans font-bold tracking-tight text-sm">
+        <a class="text-blue-900 border-b-2 border-yellow-500 pb-1 font-bold" href="main.html">Strona główna</a>
+        <a class="text-slate-500 hover:text-blue-700 transition-colors" href="gallery.html">Galeria</a>
+        <a class="text-slate-500 hover:text-blue-700 transition-colors" href="documents.html">Dokumenty</a>
+      </div>
+    </div>
+  </nav>
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative h-[870px] min-h-[600px] overflow-hidden flex items-center">
+      <div class="absolute inset-0 z-0">
+        <img alt="Coastal Italian town" class="w-full h-full object-cover"
+          data-alt="Beautiful coastal Italian town with colorful buildings"
+          src="../public/italy.jpg"
+         >
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"></div>
+      </div>
+      <div class="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div class="text-on-primary">
+          <span class="font-label uppercase tracking-widest text-sm text-tertiary-fixed-dim font-bold mb-4 block"
+           ><br></span>
+          <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+            Erasmus+ 2026: Rimini, Włochy</h1>
+          <p class="font-body text-xl opacity-90 mb-10 max-w-lg leading-relaxed">
+            Zobacz, jak nasi uczniowie zdobywali doświadczenie zawodowe w sercu Włoch. Zakończyliśmy kolejną edycję
+            pełną sukcesów i nowych kompetencji.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="gallery.html">
+              <button
+                class="px-8 py-4 bg-primary text-on-primary rounded-full font-bold shadow-lg hover:shadow-primary/20 transition-all flex items-center gap-2">
+                Zobacz galerię <span class="material-symbols-outlined" data-icon="photo_library"
+                >photo_library</span>
+              </button>
+            </a>
+            <a href="#description">
+              <button
+                class="px-8 py-4 bg-white/10 backdrop-blur-md text-on-primary border border-white/20 rounded-full font-bold hover:bg-white/20 transition-all">
+                O projekcie
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- Floating Editorial Cards -->
+        <!-- <div class="hidden lg:block relative h-full">
+          <div
+            class="absolute top-0 right-0 w-64 h-80 rounded-xl overflow-hidden shadow-2xl rotate-3 translate-y-10 border-4 border-white/20">
+            <img alt="Students working" class="w-full h-full object-cover"
+              data-alt="Group of students collaborating on a project"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBQsObDTdat0KYswoJo9ESAeymturSA2m21kuGeGn35gR4Kt14hrD9lYCWEzak7QCWmXNpJCHn_Cclnlr7nzSgNGx6rzEM713XH0EZmpGeElbMjss6mIPJBhiz9AeY013T7NATogeupWESk4NJP6kBEhwrHGEHgIkkyF-_RXETrJurpt6hMWNresjL60MA6nivlluuXF7RORh2x4mciwvjN1RhmcZYpLcGX7J7uKtPA6tag09UFRGS1FmlZLuFwZZ_ZtzyyqFsbNE"
+             >
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-72 h-48 rounded-xl overflow-hidden shadow-2xl -rotate-6 translate-x-10 -translate-y-10 border-4 border-white/20">
+            <img alt="Coffee in Italy" class="w-full h-full object-cover"
+              data-alt="Italian coffee on a table in an outdoor cafe"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuApvrHbWef8jgPq_ZiarmBeiaeNrs7diLAHC7YSmqW8UEVoZqQAwYdjnXZISTMKL54iSHev4GZNAt9rfc1llIaokwc0bd5zX_9LxkpeUsBIpjIU1-YmPASjCGKG_fcrAksAg6Sa6UEvp752_sDu4YFH4EDNhM853w8W1bKj3Z6LSGverJgGbHhowZNJNB45BiW2oDEWMJRY1SP317mdbv4aZs2C926vfGcJfjgPFgvVw7tVjjzl2cD_jJARPxvxDc753CFvjcfdVM4"
+             >
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <!-- Project Description (Opis Projektu) -->
+    <section class="py-24 bg-surface" id="description">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+          <div class="md:col-span-5">
+            <div class="relative rounded-2xl overflow-hidden shadow-sm group">
+              <img alt="Academic setting"
+                class="w-full aspect-[4/5] object-cover group-hover:scale-105 transition-transform duration-700"
+                data-alt="Modern academic office space with students talking"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA10FjHrmjYNPw2DeqTi4iqbntzjSMRfLinvhjLWOhMzezYWfXLpGFYkxmogrGFbcystzH2lTIm-yWdY1q1o9po2QvW8Zho7C59QCoRy5d0dj38wT7ZBP9MYwTiCpKbvL2jLw3SjEOfIAAaBefrzanOm1_TfX0Gwp0c1WfVmE_0TtBULknkkPY-5puvvw7JOPOA_pGEWtyjkwV8n4VcwA5CfbvIoA-OpLtmmjaGJQwih8F4y7nD3NuvD3Zc6Xwn27LNl9ePehPv8A"
+               >
+              <div class="absolute bottom-6 left-6 right-6 p-6 bg-white/90 backdrop-blur shadow-xl rounded-xl">
+                <p class="font-headline font-bold text-primary">Innowacja i Tradycja</p>
+                <p class="text-sm text-slate-600">Z powodzeniem połączyliśmy nowoczesne kompetencje z włoskim
+                  dziedzictwem.</p>
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-7 flex flex-col justify-center">
+            <label class="font-label uppercase tracking-widest text-xs text-secondary font-bold mb-4">Misja
+              Zakończona</label>
+            <h2 class="font-headline text-4xl font-bold text-primary mb-8 leading-tight">Nasza Droga do
+              Profesjonalizmu</h2>
+            <div class="space-y-6 text-slate-600 font-body leading-relaxed text-lg">
+              <p class="">
+                Projekt "Erasmus+ Italy 2026" dobiegł końca, zostawiając naszych uczniów z bagażem bezcennych
+                doświadczeń. Przez ostatnie miesiące śledziliśmy rozwój młodych talentów, którzy odważnie przełamywali
+                bariery językowe i kulturowe, stając się częścią europejskiej społeczności zawodowej.
+              </p>
+              <p class="">
+                Włoscy partnerzy z regionu Emilia-Romania wysoko ocenili zaangażowanie i umiejętności naszych stażystów.
+                Każdy z uczestników nie tylko podniósł swoje kwalifikacje w dziedzinie IT, grafiki czy logistyki, ale
+                także zyskał pewność siebie niezbędną na dzisiejszym, dynamicznym rynku pracy.
+              </p>
+            </div>
+            <div class="mt-10 flex gap-12">
+              <div>
+                <span class="block text-3xl font-extrabold text-primary">100%</span>
+                <span class="text-xs uppercase tracking-tighter font-bold text-slate-400">Zadowolenia</span>
+              </div>
+              <div>
+                <span class="block text-3xl font-extrabold text-primary">32</span>
+                <span class="text-xs uppercase tracking-tighter font-bold text-slate-400">Wydane
+                  Certyfikaty</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Expectations & Flow (Oczekiwania i Przebieg) -->
+    <section class="py-24 bg-surface-container-low rounded-[3rem] mx-4">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="font-headline text-4xl font-bold text-primary mb-4">Kamienie Milowe Projektu</h2>
+          <p class="text-slate-500 font-body max-w-2xl mx-auto">Krótki przegląd zrealizowanych etapów, które
+            doprowadziły nas do sukcesu.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Step 1 -->
+          <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all group">
+            <div
+              class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+              <span class="material-symbols-outlined text-primary group-hover:text-on-primary" data-icon="check_circle"
+               >check_circle</span>
+            </div>
+            <h3 class="font-headline text-xl font-bold text-primary mb-4">Przygotowania Zakończone</h3>
+            <p class="text-slate-600 font-body text-sm leading-relaxed">
+              Pomyślnie zrealizowaliśmy intensywne kursy językowe i warsztaty kulturowe, budując solidny fundament pod
+              wyjazd.
+            </p>
+          </div>
+          <!-- Step 2 -->
+          <div
+            class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all group border-b-4 border-secondary">
+            <div
+              class="w-12 h-12 bg-secondary-fixed rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary transition-colors">
+              <span class="material-symbols-outlined text-secondary group-hover:text-on-primary" data-icon="task_alt"
+               >task_alt</span>
+            </div>
+            <h3 class="font-headline text-xl font-bold text-primary mb-4">Staże Zrealizowane</h3>
+            <p class="text-slate-600 font-body text-sm leading-relaxed">
+              Wszyscy uczestnicy ukończyli 4-tygodniowe praktyki we włoskich przedsiębiorstwach, zdobywając praktyczną
+              wiedzę.
+            </p>
+          </div>
+          <!-- Step 3 -->
+          <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all group">
+            <div
+              class="w-12 h-12 bg-tertiary-fixed rounded-lg flex items-center justify-center mb-6 group-hover:bg-tertiary transition-colors">
+              <span class="material-symbols-outlined text-tertiary group-hover:text-on-primary"
+                data-icon="workspace_premium">workspace_premium</span>
+            </div>
+            <h3 class="font-headline text-xl font-bold text-primary mb-4">Certyfikaty Wręczone</h3>
+            <p class="text-slate-600 font-body text-sm leading-relaxed">
+              Projekt zwieńczyliśmy uroczystym rozdaniem dokumentów Europass-Mobilność, uznawanych w całej Unii
+              Europejskiej.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Participants List (Lista Uczestników) -->
+    <!-- <section class="py-24 bg-surface"> -->
+      <!-- <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+          <div>
+            <label class="font-label uppercase tracking-widest text-xs text-secondary font-bold mb-4 block"
+             >Dumni z efektów</label>
+            <h2 class="font-headline text-4xl font-bold text-primary">Nasi Absolwenci Projektu</h2>
+          </div>
+          <div class="flex gap-2">
+            <button class="px-4 py-2 bg-surface-container-high rounded-full font-bold text-xs">Wszyscy</button>
+            <button class="px-4 py-2 text-slate-500 rounded-full font-bold text-xs hover:bg-slate-100"
+             >Informatycy</button>
+            <button class="px-4 py-2 text-slate-500 rounded-full font-bold text-xs hover:bg-slate-100"
+             >Graficy</button>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"> -->
+          <!-- Participant 1 -->
+          <!-- <div class="bg-surface-container-lowest p-1 rounded-2xl group cursor-pointer">
+            <div class="aspect-square rounded-xl overflow-hidden mb-4 relative">
+              <img alt="Adam Nowak" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                data-alt="Professional portrait of a male student"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6T_6TxxXTMPtSzQtML89hnQxFIzjNo7SxqBc3HMhpnd5mwAiCvE_7FcUMW5LUH74tLW-sNpCBnzLGMrRgW_YYzCobWZ5kyFp65v7MyHG_mln45MxRgmYOb1kmS0KL6VWsLUDmD2YomBe2ttIpaRJpM-YHSpYkpjdbSIi_APu1IWbrlSN9h9XXG5h5wgoFhpJjLCuGNrk-w8F-jNm8Mfq5W26LggqLPWd3gnvmk7xRUgt1CTqc6Uf1o_BVKHA48ATscM-N7IwsiBU"
+               >
+              <div
+                class="absolute top-4 right-4 bg-primary text-white text-[10px] px-2 py-1 rounded-full uppercase font-bold"
+               >IT Expert</div>
+            </div>
+            <div class="px-4 pb-4">
+              <h4 class="font-headline font-bold text-primary group-hover:text-secondary transition-colors">
+                Adam Nowak</h4>
+              <p class="text-xs text-slate-500 font-label tracking-wide">Technik Informatyk</p>
+            </div>
+          </div> -->
+          <!-- Participant 2 -->
+          <!-- <div class="bg-surface-container-lowest p-1 rounded-2xl group cursor-pointer">
+            <div class="aspect-square rounded-xl overflow-hidden mb-4 relative">
+              <img alt="Marta Kowalska"
+                class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                data-alt="Professional portrait of a female student smiling"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBq4nhFyNUzxABrTFJUhGpneg0ca-YtT79lygaainVucj7RInDMPbGA5EIESFrhH1fGBfHyOe-qy4KqKbFUlkZtJnzyexijT_-0fCcb9tv2iXk0qYxR6eB_iL2eKDeriV5KHP4Jqkwh8P7-wJLi1rSTFqePlTNqGZRoOFQJnxVxRgBQc3XOX4MVvTwlsim0F0_xiGCpwHq-CMLV1FeKv-GXODPdv5XCxkamzxaevd4Oebrp2YHrriN1XFN-NIQKrHXGQZ-o5uxxTMs"
+               >
+              <div
+                class="absolute top-4 right-4 bg-secondary text-white text-[10px] px-2 py-1 rounded-full uppercase font-bold"
+               >Design</div>
+            </div>
+            <div class="px-4 pb-4">
+              <h4 class="font-headline font-bold text-primary group-hover:text-secondary transition-colors">
+                Marta Kowalska</h4>
+              <p class="text-xs text-slate-500 font-label tracking-wide">Technik Grafiki</p>
+            </div>
+          </div> -->
+          <!-- Participant 3 -->
+          <!-- <div class="bg-surface-container-lowest p-1 rounded-2xl group cursor-pointer">
+            <div class="aspect-square rounded-xl overflow-hidden mb-4 relative">
+              <img alt="Piotr Wiśniewski"
+                class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                data-alt="Professional portrait of a male student wearing glasses"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcl9bn3TwjYqtRxrdpMYh-QWiQ6rJE_SML2h46FOgapyfWaUsWUQiAEKZkO_Rq2Me6qAMbfmplpxpcRu2bhjlJ-JrOra8Zwtx10BsEeaB8VySf2tO4DyNvRCBXoy7UCqrhEeG58T5RExxCe7VFzLlbRtD37bll5JQ4AGh8wgMoFLd1wZyDOPkNgU0_cIdbg8WY07WvTnhH3YcJj1ejBfbsbdhBPcMrg3vcAcK3v5U3vnWm2TfQZ-6lM5a-8FkvrOSh-jNPlX8JJNs"
+               >
+              <div
+                class="absolute top-4 right-4 bg-primary text-white text-[10px] px-2 py-1 rounded-full uppercase font-bold"
+               >IT Expert</div>
+            </div>
+            <div class="px-4 pb-4">
+              <h4 class="font-headline font-bold text-primary group-hover:text-secondary transition-colors">
+                Piotr Wiśniewski</h4>
+              <p class="text-xs text-slate-500 font-label tracking-wide">Technik Informatyk</p>
+            </div>
+          </div> -->
+          <!-- Participant 4 -->
+          <!-- <div class="bg-surface-container-lowest p-1 rounded-2xl group cursor-pointer">
+            <div class="aspect-square rounded-xl overflow-hidden mb-4 relative">
+              <img alt="Anna Lewandowska"
+                class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                data-alt="Professional portrait of a female student with red hair"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlYLeiP5T3i-pK6BB0GBER39q-iE7Id3bibyZvGEeI0XjC38aSWtySTcYe_Iz2K_LRQxhFWm4d0ou_JxCrelBv9-6Ouk0OZT5ARyl2Q2-cqdLErWp9wvutX7JmFhRPOM10kFRyq5rP6AO2VkGzHOSyFdAMya2C0N6_0ly4vKWQ5d419WkqYayOAGWqnrOjBowQJifUsVOJg6LsDoQIRr9MR0jx_iktDrLanG6_qu7Gik95iG99SQc6yALuRMdh2DYLiTxeXqywrqE"
+               >
+              <div
+                class="absolute top-4 right-4 bg-tertiary-container text-on-tertiary-container text-[10px] px-2 py-1 rounded-full uppercase font-bold"
+               >Logistics</div>
+            </div>
+            <div class="px-4 pb-4">
+              <h4 class="font-headline font-bold text-primary group-hover:text-secondary transition-colors">
+                Anna Lewandowska</h4>
+              <p class="text-xs text-slate-500 font-label tracking-wide">Technik Logistyk</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 text-center">
+          <button
+            class="text-primary font-bold text-sm border-b-2 border-primary/20 hover:border-primary transition-all pb-1"
+           >Zobacz pełną listę uczestników i ich sukcesy</button>
+        </div>
+      </div> -->
+    <!-- </section> -->
+     
+    <!-- Gallery Teaser / Asymmetric Grid -->
+    <section class="py-24 bg-white overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="font-headline text-4xl font-bold text-primary mb-6">Włoskie Klimaty</h2>
+          <p class="font-body text-slate-600 mb-8">Zapraszamy do obejrzenia fotorelacji z wyjazdu. Od
+            słonecznych uliczek Bolonii po nowoczesne studia projektowe w Mediolanie, gdzie nasi uczniowie szlifowali
+            swoje talenty.</p>
+          <a class="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-white rounded-full font-bold hover:bg-secondary/90 transition-all"
+            href="#">
+            Otwórz Galerię <span class="material-symbols-outlined" data-icon="photo_library"
+             >photo_library</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-2 gap-4 h-[400px]">
+          <div class="rounded-2xl overflow-hidden h-full">
+            <img alt="Venice" class="w-full h-full object-cover"
+              data-alt="Scenic view of Venice canals and architecture"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4CJC8w4sPiaXzSb5U6Pvhdle20hUDG3CWp9PmoiPVnELvvIYx9fCT7TX4tAnFDs_AyVcO1EjvlHCH14YUvejQI63MldQcF2PcSDU0I-F1Z792x3kPpt5nWvhe-T8DsdQ7kQUxEMrL81aQryBNXVDA6vZ192vhYyMolOaNoq4k9fid_wYeH9CVzPLJB1AJQHC0XukI3uF_S-Hlz235spQpxM5aH1fs0wAJU8nXuwOfhMVEmmbHwQeLUY4nJOxPnLD5HcYWoIV9inQ"
+             >
+          </div>
+          <div class="grid gap-4">
+            <div class="rounded-2xl overflow-hidden h-1/2">
+              <img alt="Workplace" class="w-full h-full object-cover" data-alt="Modern workspace with laptop and coffee"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeWmZTY4Mk7LlTCRhRSR_SsThNBOesXsW1H2mEnZBPrE9NAEQUtRh16RUqLbVYZC_OwZ3wF382ZL7H7Mi4n7_qe8be0j5kijEm-hst_pkdNrMEEbFwCUm2XW6RX_EVusR5YdmdvTrBGTSLzH1gyL0Xe8axS0APFkCvgCzZow0UYEKwPgeofSKhJcKW2IroOwSMJ9ZUNYGp6v6PQhltA-aGgSOCfNxGKpADur4uLi8qeGnoiFc5ECgj3nsv2j7IQ5m73KokD0e3OsA"
+               >
+            </div>
+            <div class="rounded-2xl overflow-hidden h-1/2 bg-primary flex items-center justify-center p-8 text-white">
+              <p class="font-headline font-bold text-lg leading-tight text-center">Dziękujemy wszystkim
+                partnerom i uczestnikom</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="w-full mt-20 border-t border-slate-200/15 bg-slate-50">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-8 py-12">
+      <div class="space-y-4">
+        <div class="text-lg font-bold text-blue-900 plus-jakarta-sans">
+          Erasmus+ Włochy 2026
+        </div>
+        <p class="text-slate-500 font-body text-xs leading-relaxed max-w-xs">
+          Dofinansowano ze środków Unii Europejskiej.
+          <!-- Podsumowanie inicjatywy edukacyjnej mającej na celu rozwój kompetencji zawodowych i kulturowych młodzieży.
+          Projekt zakończony sukcesem. -->
+        </p>
+      </div>
+      <!-- <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <img alt="EU Flag" class="w-10 h-6 rounded-sm object-cover"
+            data-alt="Abstract representation of European Union colors"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEbAR7z_vSmTYtPRc5j_A1Ui8oxhP2PlpUNBunTpWLcyBQegERP_DoUL3pgrPJ8W-ZM4OhL0sSj7qtwUiWSfCDYdiWkAKHxoKlxAbKWXXKzG_3gUwS60druOvf6E_5sk9Tt3_lbT4jsVfDBOWtwIW9bxfvl2V5pgUGF4pnlJolt5bjEKvxkIH7aMTYF06TSIWzQiovbBsj-ZP7xjwQ5eB6ZGUwdPv9ZNaBmuiDywal2-3F1vEIDnaGeMCnEouKovONhuu61BlhkkE"
+           >
+          <p class="inter text-xs uppercase tracking-widest font-bold text-slate-400">Co-funded by the EU</p>
+        </div>
+        <p class="text-slate-500 text-[10px] leading-relaxed">
+          © 2026 Erasmus+ Włochy. Sfinansowano ze środków Unii Europejskiej.
+        </p>
+        </div>
+      </div> -->
+    </div>
+  </footer>
+</body>
+
+</html>

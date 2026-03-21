@@ -1,0 +1,298 @@
+<html class="light" lang="pl">
+
+<head></head>
+
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">```html
+
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Erasmus+ Rimini 2026 - Galeria Projektu</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-surface": "#181c20",
+            "secondary": "#006e24",
+            "surface-dim": "#d7dae0",
+            "inverse-surface": "#2d3135",
+            "primary": "#003b72",
+            "on-tertiary-container": "#f9bc00",
+            "on-primary": "#ffffff",
+            "secondary-container": "#95f598",
+            "on-tertiary-fixed-variant": "#5b4300",
+            "inverse-on-surface": "#eef1f7",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-fixed-variant": "#005319",
+            "inverse-primary": "#a6c8ff",
+            "on-primary-fixed-variant": "#004787",
+            "primary-fixed-dim": "#a6c8ff",
+            "surface-container": "#ebeef4",
+            "tertiary-fixed": "#ffdf9e",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed": "#002106",
+            "surface": "#f7f9ff",
+            "surface-tint": "#1d5fa8",
+            "secondary-fixed": "#98f89b",
+            "on-primary-fixed": "#001c3b",
+            "primary-container": "#00529b",
+            "error": "#ba1a1a",
+            "surface-container-low": "#f1f4fa",
+            "surface-container-high": "#e5e8ee",
+            "on-background": "#181c20",
+            "tertiary": "#4d3800",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-fixed": "#261a00",
+            "outline-variant": "#c2c6d3",
+            "on-error-container": "#93000a",
+            "primary-fixed": "#d5e3ff",
+            "on-primary-container": "#a5c7ff",
+            "tertiary-container": "#694e00",
+            "on-secondary": "#ffffff",
+            "outline": "#727782",
+            "secondary-fixed-dim": "#7cdb81",
+            "tertiary-fixed-dim": "#fabd00",
+            "background": "#f7f9ff",
+            "surface-variant": "#dfe3e8",
+            "surface-container-highest": "#dfe3e8",
+            "on-error": "#ffffff",
+            "surface-bright": "#f7f9ff",
+            "on-surface-variant": "#424751",
+            "on-secondary-container": "#037327"
+          },
+          fontFamily: {
+            "headline": ["Plus Jakarta Sans"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+    }
+
+    .glass-nav {
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-auto-rows: 250px;
+      grid-auto-flow: dense;
+    }
+
+    .gallery-item-wide {
+      grid-column: span 2;
+    }
+
+    .gallery-item-tall {
+      grid-row: span 2;
+    }
+  </style>
+  <!-- TopAppBar -->
+  <header
+    class="fixed top-0 w-full z-50 rounded-b-2xl bg-white/70 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,59,114,0.06)]">
+    <nav
+      class="fixed top-0 w-full z-50 rounded-b-2xl bg-white/70 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,59,114,0.06)]">
+      <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+        <div class="text-xl font-extrabold text-blue-900 tracking-tighter plus-jakarta-sans">
+          Erasmus+ 2026: Rimini</div>
+        <div class="hidden md:flex items-center gap-8 plus-jakarta-sans font-bold tracking-tight text-sm">
+          <a class="text-slate-500 hover:text-blue-700 transition-colors" href="main.html">Strona główna</a>
+          <a class="text-blue-900 border-b-2 border-yellow-500 pb-1 font-bold" href="gallery.html">Galeria</a>
+          <a class="text-slate-500 hover:text-blue-700 transition-colors" href="documents.html">Dokumenty</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+    <!-- Hero Title Section -->
+    <section class="mb-16">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div class="max-w-2xl">
+          <h1 class="font-headline text-5xl md:text-6xl font-extrabold text-primary tracking-tight leading-tight">
+            Galeria Projektu
+          </h1>
+          <p class="mt-6 text-lg text-on-surface-variant leading-relaxed max-w-xl">
+            Wspomnienia z programu, które ożywiają doświadczenia naszych uczestników - od warsztatów technicznych po kulturalne odkrycia.
+          </p>
+        </div>
+        <!-- <div class="flex gap-2">
+          <button
+            class="px-6 py-3 bg-primary text-on-primary rounded-full font-semibold flex items-center gap-2 shadow-lg shadow-primary/20 hover:shadow-xl transition-all">
+            <span class="material-symbols-outlined" data-icon="filter_list">filter_list</span>
+            Filtruj
+          </button>
+        </div> -->
+      </div>
+    </section>
+    <!-- Bento Inspired Gallery Grid -->
+    <section class="gallery-grid gap-4 md:gap-6">
+      <!-- Workshop Activity -->
+      <div
+        class="gallery-item-wide gallery-item-tall group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm transition-all hover:shadow-[0_32px_48px_-4px_rgba(24,28,32,0.06)]">
+        <img alt="Student workshop in Italy"
+          class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+          data-alt="Students participating in a technical workshop in Italy"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS-4kqfiaqp_B7OaCfvWXCrl7vVptmnV2a6BDWjDRNEFrpEIA7Sl-w_f6Ta0GnO5S0PMvjDOKUquQa6Lf_668bnM2vu68AaEXkOdZTmozEI-EJNgxxsJpXXQLhud3ORcohYLwEuyu2WKFsFY2LWfFFPICeM_I1LNcjzoDL4ZlREGKsKE4XQOsvzsP-RD9oTgteDBOmkPtJvVyLZWmhxh0_d5eALoDsbWjG8OgIQtqVRlRPxjhcFwyfKVqdw5LpssrYEn0kzhZMP8k" />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+          <span class="text-tertiary-fixed text-xs font-bold tracking-widest uppercase mb-2">Warsztaty Techniczne</span>
+          <h3 class="text-white font-headline text-xl font-bold">Praktyka zawodowa w Bolonii</h3>
+        </div>
+      </div>
+      <!-- Sightseeing -->
+      <div
+        class="group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm transition-all hover:shadow-[0_32px_48px_-4px_rgba(24,28,32,0.06)]">
+        <img alt="Venice canals"
+          class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+          data-alt="Beautiful view of Venice canals during sightseeing"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdxvI4O3h6LP_6DGhz28eLkP5kxSxa4QwPMULHv1Qk7jVLByR3wr-BzcRO3tjG5xNGBuoMX8pmen-jNgGaJvroTjHsu_sDyfIv1bnmYjX4mswQeWyVq9MVTNUNFSASm3oDu8f872KLXT5CDWzUDLi-2JA6CZ7Rse33osElFV-iqlUvxP5U82iA-Nrh5NqNSmNcX3ZxTatHT8fV3_Uv01Z1czJeIaBBOpK8Te4PCoQREmJ2Tqiao1I86uvm7FE2wgs0IACocHklFjs" />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-tertiary-fixed text-xs font-bold tracking-widest uppercase mb-1">Kultura</span>
+          <h3 class="text-white font-headline text-lg font-bold">Uroki Wenecji</h3>
+        </div>
+      </div>
+      <!-- Student Group -->
+      <div
+        class="group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm transition-all hover:shadow-[0_32px_48px_-4px_rgba(24,28,32,0.06)]">
+        <img alt="Group of students"
+          class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+          data-alt="Group of Erasmus students smiling in a city square"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLxCuk6cR7rRt2r5hG890uEvnW9pzdzXtlIW1ol-8mQLod-wOLF2Vj1nqtYAVDzueTV_PjoJjatKyjcrFPBab6V_R8iZ1G4WwKB0u0Jpj_I2J3WPtUjySOtNQYqLF6EzAwZ-Solat5KUirZi5TYZUVfwiaICfBOTr6cvsvKcXV3aAuAoez3vS8Pix-arEgNZ4W7xQTQ0jAMQOp6U1zgnD2v1qFninWI8jiRKDeMwY8RB05tQC16YevKD6AyY-9qEtIICPInJsY41I" />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-tertiary-fixed text-xs font-bold tracking-widest uppercase mb-1">Integracja</span>
+          <h3 class="text-white font-headline text-lg font-bold">Wspólne chwile</h3>
+        </div>
+      </div>
+      <!-- Architecture -->
+      <div
+        class="gallery-item-tall group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm transition-all hover:shadow-[0_32px_48px_-4px_rgba(24,28,32,0.06)]">
+        <img alt="Italian architecture"
+          class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+          data-alt="Classic Italian architecture and colorful buildings"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtCD_i5c8EabwAqhamn8nYE4uUK80I_NLdiW_u4hacyWEtCsMOvuIEto2yUk6toE7Erp0f33IhytyWVtc8V9ir_4KgqMFBZZ7k3KHGAdacVDqv0RCgfqKJB_ZA8y_Ct1nJANYQwiZ5jzIWVAz48-s-Dm0pULEhiLU7Bra6_Es818lUakBg6vkEl4WH807GqMKAFvM_wng5BwmqNanaQD6GHT_acZPtJO7zQrHj3SGXJPIBgYWNgd_Xf_mT5HoBfLLoSRhlLAazSjo" />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-tertiary-fixed text-xs font-bold tracking-widest uppercase mb-1">Podróże</span>
+          <h3 class="text-white font-headline text-lg font-bold">Architektura Toskanii</h3>
+        </div>
+      </div>
+      <!-- Food/Cultural -->
+      <div
+        class="gallery-item-wide group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm transition-all hover:shadow-[0_32px_48px_-4px_rgba(24,28,32,0.06)]">
+        <img alt="Italian dinner"
+          class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+          data-alt="Authentic Italian dinner shared by project participants"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjAHpGJRxeIzL6H-mKxtkpVAkVs6SmXUt9wMrOmnsmsEiJAuHx9IbxEYztlla_ymsJMmnLzDHeWaDLWUpLPz6OP12s-Rs2qzFIVN8NvmU3C6lY_9r86XMXkAwdqdYCTIHTQyT3iyqCI0f_wkq19wxZgtWEBYelVsBJZ4m3spW-OY_TD8WLk8orJ_jPU8ZCwItcZwBF-KVOyvEBvAtgpMvMIR1yvvOLVY9wRY22J4vQpnSk6X5kJhVifnFZAddHcrykEjz16vSxYJc" />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-tertiary-fixed text-xs font-bold tracking-widest uppercase mb-1">Gastronomia</span>
+          <h3 class="text-white font-headline text-lg font-bold">Włoska kolacja powitalna</h3>
+        </div>
+      </div>
+      <!-- Lab Work -->
+      <div
+        class="group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm transition-all hover:shadow-[0_32px_48px_-4px_rgba(24,28,32,0.06)]">
+        <img alt="Laboratory work"
+          class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+          data-alt="Students working in a modern technical laboratory"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZaN2tMqkrM_MgnwwJjdpiwlg7p2uDi_Yanyk31Fxn9-K4reWGpmsNsNNeU8ZrGO7nseyRoOBR273T1rFUOhhf2EAtKyt_3nWHflakJEzZmzXL7zFF6Io5DV2P7uR1ToMz_7pErh5ci8SExi8uA-z97aryblFDPqMt5MVi1wTkOJWusN7GxXilLkBfEdAhRXqvaYYLUYG28NYJ5yMASM60vpFM4VsVeTn19fGv6i23FzoeSQyapYt1kRGUVIgjpZtTjWSEJKU9OlU" />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+          <span class="text-tertiary-fixed text-xs font-bold tracking-widest uppercase mb-1">Edukacja</span>
+          <h3 class="text-white font-headline text-lg font-bold">Zajęcia laboratoryjne</h3>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery Navigation / Pagination -->
+    <div class="mt-16 flex justify-center">
+      <nav class="inline-flex items-center p-1 bg-surface-container-low rounded-full">
+        <button
+          class="w-12 h-12 flex items-center justify-center rounded-full hover:bg-white transition-all text-primary">
+          <span class="material-symbols-outlined" data-icon="chevron_left">chevron_left</span>
+        </button>
+        <button class="px-5 py-2 rounded-full bg-primary text-on-primary font-bold shadow-md">1</button>
+        <button
+          class="px-5 py-2 rounded-full hover:bg-white text-on-surface-variant font-medium transition-all">2</button>
+        <button
+          class="px-5 py-2 rounded-full hover:bg-white text-on-surface-variant font-medium transition-all">3</button>
+        <button
+          class="w-12 h-12 flex items-center justify-center rounded-full hover:bg-white transition-all text-primary">
+          <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+        </button>
+      </nav>
+    </div>
+  </main>
+  <!-- Footer -->
+  <!-- <footer class="w-full mt-20 border-t border-slate-200/15 bg-slate-50">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-8 py-12">
+      <div class="space-y-4">
+        <div class="text-lg font-bold text-blue-900">Erasmus+ Rimini 2026</div>
+        <p class="inter text-xs uppercase tracking-widest text-slate-500 leading-loose">
+          © 2026 Erasmus+ Professional Mobility - Rimini. Funded by the European Union.
+        </p>
+      </div>
+      <div class="flex flex-col space-y-3">
+        <h4 class="font-headline text-sm font-bold text-primary mb-2">Szybkie linki</h4>
+        <a class="inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-600 transition-all opacity-80 hover:opacity-100"
+          href="#">Contact Project Coordinator</a>
+        <a class="inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-600 transition-all opacity-80 hover:opacity-100"
+          href="#">Institutional Partners</a>
+        <a class="inter text-xs uppercase tracking-widest text-slate-500 hover:text-blue-600 transition-all opacity-80 hover:opacity-100"
+          href="#">Privacy Policy</a>
+      </div>
+      <div class="flex flex-col space-y-4">
+        <h4 class="font-headline text-sm font-bold text-primary mb-2">Finansowanie</h4>
+        <div class="bg-white p-4 rounded-xl shadow-sm inline-flex items-center gap-4">
+          <div
+            class="w-12 h-8 bg-primary rounded-sm flex items-center justify-center text-[8px] text-white font-bold leading-none text-center">
+            EU<br />FLAG</div>
+          <p class="text-[10px] leading-tight text-on-surface-variant font-medium">
+            Co-funded by the<br />European Union
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+
+  <!-- Simplified Lightbox Background Overlay (Hidden State Example) -->
+  <div class="hidden fixed inset-0 z-[100] bg-on-surface/95 flex items-center justify-center p-6 md:p-12" id="lightbox">
+    <button class="absolute top-8 right-8 text-white p-2">
+      <span class="material-symbols-outlined text-4xl" data-icon="close">close</span>
+    </button>
+    <div class="max-w-5xl w-full h-full flex flex-col items-center justify-center">
+      <img alt="Full size gallery" class="max-h-[819px] w-auto object-contain rounded-lg shadow-2xl"
+        data-alt="Full size technical workshop photo"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGpoI0LY7bQfRvO8HsDSQe3Z_G2nG5c3cJT_T3k1hidwVRKoZhFyamOdP-gtjTSLlMaeE8cwnbtktwOfbYyU4QkzcNmwHCefZlm9jaRkT4fwUdlomKd1hYPWDhGa1hJEUPyxAYO2HA7YsZtdw8gbAL9kPVGBIJXB8vA1d-eoyFTpqmcbBgdlSz2ylj38LcsZZWh_qIWjdPFtvp15yvh-xTQ7PLjVST4Sx9sbRL8FaKN5y7K2FLEkISAxz37j8iqf0DNP87M2uJbFI" />
+      <div class="mt-8 text-center text-white">
+        <h2 class="font-headline text-2xl font-bold">Praktyka zawodowa w Bolonii</h2>
+        <p class="mt-2 text-white/70 font-body">Wspomnienie z obsługi zaawansowanych systemów sterowania CNC.</p>
+      </div>
+    </div>
+  </div>
+  ```
+</body>
+
+</html>

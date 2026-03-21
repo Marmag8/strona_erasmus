@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Archiwum Dokumentów - Erasmus+ Italy 2026</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-surface": "#181c20",
+            "secondary": "#006e24",
+            "surface-dim": "#d7dae0",
+            "inverse-surface": "#2d3135",
+            "primary": "#003b72",
+            "on-tertiary-container": "#f9bc00",
+            "on-primary": "#ffffff",
+            "secondary-container": "#95f598",
+            "on-tertiary-fixed-variant": "#5b4300",
+            "inverse-on-surface": "#eef1f7",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-fixed-variant": "#005319",
+            "inverse-primary": "#a6c8ff",
+            "on-primary-fixed-variant": "#004787",
+            "primary-fixed-dim": "#a6c8ff",
+            "surface-container": "#ebeef4",
+            "tertiary-fixed": "#ffdf9e",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed": "#002106",
+            "surface": "#f7f9ff",
+            "surface-tint": "#1d5fa8",
+            "secondary-fixed": "#98f89b",
+            "on-primary-fixed": "#001c3b",
+            "primary-container": "#00529b",
+            "error": "#ba1a1a",
+            "surface-container-low": "#f1f4fa",
+            "surface-container-high": "#e5e8ee",
+            "on-background": "#181c20",
+            "tertiary": "#4d3800",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-fixed": "#261a00",
+            "outline-variant": "#c2c6d3",
+            "on-error-container": "#93000a",
+            "primary-fixed": "#d5e3ff",
+            "on-primary-container": "#a5c7ff",
+            "tertiary-container": "#694e00",
+            "on-secondary": "#ffffff",
+            "outline": "#727782",
+            "secondary-fixed-dim": "#7cdb81",
+            "tertiary-fixed-dim": "#fabd00",
+            "background": "#f7f9ff",
+            "surface-variant": "#dfe3e8",
+            "surface-container-highest": "#dfe3e8",
+            "on-error": "#ffffff",
+            "surface-bright": "#f7f9ff",
+            "on-surface-variant": "#424751",
+            "on-secondary-container": "#037327"
+          },
+          fontFamily: {
+            "headline": ["Plus Jakarta Sans"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f9ff;
+      color: #181c20;
+    }
+
+    .plus-jakarta-sans {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+  <!-- TopNavBar -->
+  <nav
+    class="fixed top-0 w-full z-50 rounded-b-2xl bg-white/70 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,59,114,0.06)]">
+    <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+      <div class="text-xl font-extrabold text-blue-900 tracking-tighter plus-jakarta-sans">
+        Erasmus+ 2026: Rimini</div>
+      <div class="hidden md:flex items-center gap-8 plus-jakarta-sans font-bold tracking-tight text-sm">
+        <a class="text-slate-500 hover:text-blue-700 transition-colors" href="main.html">Strona główna</a>
+        <a class="text-slate-500 hover:text-blue-700 transition-colors" href="gallery.html">Galeria</a>
+        <a class="text-blue-900 border-b-2 border-yellow-500 pb-1 font-bold" href="documents.html">Dokumenty</a>
+      </div>
+    </div>
+  </nav>
+  <main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+    <!-- Hero Header Section -->
+    <header class="mb-16 md:mb-24 relative">
+      <div class="max-w-3xl">
+        <h1 class="font-headline text-5xl md:text-6xl font-extrabold tracking-tight text-primary mb-6 leading-[1.1]">
+          Dokumenty
+        </h1>
+        <!-- <p class="font-body text-lg text-on-surface-variant leading-relaxed opacity-80">
+          Archiwum dokumentacji projektu, regulaminów oraz wypracowanych rezultatów, które powstały podczas mobilności
+          zawodowej we Włoszech.
+        </p> -->
+      </div>
+      <!-- Decorative Accent -->
+      <!-- <div class="absolute -top-10 -right-10 w-64 h-64 bg-secondary-fixed/20 blur-[100px] rounded-full -z-10"></div> -->
+    </header>
+  </main>
+</body>
+
+</html>
