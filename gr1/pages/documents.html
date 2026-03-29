@@ -6,6 +6,7 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Dokumenty - Erasmus+ Italy 2026</title>
+  <link rel="icon" type="image/x-icon" href="../public/elektronik.png">
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
@@ -13,6 +14,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/documents.css" />
   <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
@@ -77,21 +79,6 @@
       },
     }
   </script>
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f7f9ff;
-      color: #181c20;
-    }
-
-    .plus-jakarta-sans {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-    }
-
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-    }
-  </style>
 </head>
 
 <body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
@@ -113,9 +100,6 @@
         <h1 class="font-headline text-5xl md:text-6xl font-extrabold tracking-tight text-primary mb-6 leading-[1.1]">
           Dokumenty
         </h1>
-        <!-- <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-2xl">
-          Poniżej znajdziesz przykładowe dokumenty. Kliknij kartę, aby otworzyć plik w nowej karcie.
-        </p> -->
       </div>
 
     </header>
@@ -139,7 +123,7 @@
       </a> -->
 
 
-      <a href="../public/dokument.webp" target="_blank"
+      <a href="https://zse.edu.pl/pliki/Erasmus25/Regulamin_sta%C5%BCu.pdf" target="_blank"
         class="group relative flex w-full items-center gap-4 sm:gap-6 overflow-hidden rounded-2xl bg-surface-container-lowest p-4 sm:p-5 shadow-sm ring-1 ring-outline-variant/30 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_22px_40px_-16px_rgba(24,28,32,0.28)]">
         <div aria-hidden="true" class="h-20 w-20 sm:h-24 sm:w-24 shrink-0 overflow-hidden rounded-xl bg-surface-container-low">
           <img
@@ -148,7 +132,7 @@
         </div>
         <div class="min-w-0 flex-1">
           <h2 class="plus-jakarta-sans text-xl sm:text-2xl font-bold tracking-tight text-on-surface">
-            Regulamin Wyjazdu Erasmus+ 2026
+            Regulamin Stażu
           </h2>
         </div>
       </a>
@@ -185,21 +169,42 @@
   </main>
 
   <footer class="w-full mt-20 border-t border-slate-200/15 bg-slate-50">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto px-8 py-12 items-start">
       <div class="space-y-4">
         <div class="text-lg font-bold text-blue-900 plus-jakarta-sans">
           Erasmus+ Włochy 2026
         </div>
         <p class="text-slate-500 font-body text-xs leading-relaxed max-w-xs">
           Dofinansowano ze środków Unii Europejskiej.
-          <!-- Podsumowanie inicjatywy edukacyjnej mającej na celu rozwój kompetencji zawodowych i kulturowych młodzieży.
-          Projekt zakończony sukcesem. -->
         </p>
       </div>
-      <div class="flex items-center gap-3" style="max-width: 200px;">
-        <img src="../public/elektronik.png" alt="Logo Elektronika"/>
-        <img src="../public/universalMobility.jpg" alt="Logo Universal Mobility"/>
-        <img src="../public/wspolfinansowanePrzezUnie.png" alt="Współfinansowane przez Unię Europejską"/>
+      <div class="flex flex-wrap items-center justify-start gap-4 md:justify-center">
+        <img class="h-20 w-auto object-contain" src="../public/elektronik.png" alt="Logo Elektronika"/>
+        <img class="h-20 w-auto object-contain" src="../public/universalMobility.jpg" alt="Logo Universal Mobility"/>
+        <img class="h-20 w-auto object-contain" src="../public/wspolfinansowanePrzezUnie.png" alt="Współfinansowane przez Unię Europejską"/>
+      </div>
+      <div class="md:justify-self-end md:text-left">
+        <h3 class="text-sm uppercase tracking-wide font-bold text-primary mb-3">Autorzy</h3>
+        <ul class="space-y-1 text-slate-600 font-body text-sm">
+          <li>Bartosz Warzecha</li>
+          <li>Igor Maciejewski</li>
+          <li>Dawid Wnuk</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-8 py-5 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <p class="text-[11px] leading-relaxed text-slate-500 font-body md:pr-8">
+          Projekt nr 2025-1PL01-KA121-VET-000310604 realizowany w ramach Akredytacji programu Erasmus+ akcja
+          Kształcenie Szkolenia zawodowego nr 2020-1-PL01-KA120-VET-000095178
+        </p>
+        <p class="text-[11px] leading-relaxed text-slate-500 font-body md:pl-8 md:text-right">
+          Materiały na stronie udostępnione na zasadzie licencji Creative Commons.
+          Współfinansowane przez Unię Europejską. Wyrażone poglądy i opinie są jednak poglądami i opiniami 
+          wyłącznie autora(-ów) i niekoniecznie odzwierciedlają poglądy Unii Europejskiej lub Fundacji Rozwoju Systemu Edukacji (FRSE). 
+          Ani Unia Europejska, ani FRSE nie mogą ponosić za nie odpowiedzialności.
+        </p>
       </div>
     </div>
   </footer>
