@@ -9,3 +9,33 @@ body {
     .material-symbols-outlined {
       font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     }
+
+    .nav-links {
+          display: flex;
+          align-items: center;
+          gap: 1.25rem;
+    }
+
+    @media (max-width: 768px) {
+          .nav-links {
+            gap: 0.6rem;
+          }
+
+          .nav-links a {
+            font-size: 0.78rem;
+          }
+
+          .section-table-link {
+            white-space: nowrap;
+          }
+    }
+
+    @media (max-width: 640px) {
+          .hero-title {
+            font-size: 2rem;
+          }
+
+          .hero-copy {
+            font-size: 1rem;
+          }
+    }

@@ -22,3 +22,24 @@
     .gallery-item-tall {
       grid-row: span 2;
     }
+
+    .nav-links {
+          display: flex;
+          align-items: center;
+          gap: 1.25rem;
+    }
+
+    @media (max-width: 768px) {
+          .nav-links {
+            gap: 0.6rem;
+          }
+
+          .nav-links a {
+            font-size: 0.78rem;
+          }
+
+          .gallery-grid {
+            grid-template-columns: 1fr;
+            grid-auto-rows: 220px;
+          }
+    }
