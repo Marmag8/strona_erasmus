@@ -1,14 +1,11 @@
+<!DOCTYPE html>
 <html class="light" lang="pl">
 
-<head></head>
-
-<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
-
-
+<head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Erasmus+ Rimini 2026 - Galeria Projektu</title>
-  <link rel="icon" type="image/x-icon" href="../public/elektronik.png">
+  <title>Galeria - Erasmus+ Rimini 2026</title>
+  <link rel="icon" type="image/png" href="../public/elektronik.png" />
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
@@ -84,6 +81,9 @@
       },
     }
   </script>
+</head>
+
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
   <!-- TopAppBar -->
   <header
     class="fixed top-0 w-full z-50 rounded-b-2xl bg-white/70 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,59,114,0.06)]">
@@ -116,74 +116,29 @@
     </section>
     
     <!-- GALERIA ZDJĘĆ -->
-    <section class="gallery-grid gap-4 md:gap-6">
-      <!-- SZABLON DLA ZDJĘCIA - podmienić tylko alt, src oraz href -->
-      <!-- <div
-        class="group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm transition-all hover:shadow-[0_32px_48px_-4px_rgba(24,28,32,0.06)]">
-        <a href="../public/elektronik.png">
-          <img alt="Elektronik"
-            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-            src="../public/elektronik.png">
-        </a>
-      </div> -->
-
-      <div
-        class="group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm transition-all hover:shadow-[0_32px_48px_-4px_rgba(24,28,32,0.06)]">
-        <a href="../public/idea.jpg">
-          <img alt="Elektronik"
-            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-            src="../public/idea.jpg">
-        </a>
-      </div>
-
-      <div
-        class="group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm transition-all hover:shadow-[0_32px_48px_-4px_rgba(24,28,32,0.06)]">
-        <a href="../public/italy.jpg">
-          <img alt="Elektronik"
-            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-            src="../public/italy.jpg">
-        </a>
-      </div>
-
-      <div
-        class="group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm transition-all hover:shadow-[0_32px_48px_-4px_rgba(24,28,32,0.06)]">
-        <a href="../public/universalMobility.jpg">
-          <img alt="Elektronik"
-            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-            src="../public/universalMobility.jpg">
-        </a>
-      </div>
-
-      <div
-        class="group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm transition-all hover:shadow-[0_32px_48px_-4px_rgba(24,28,32,0.06)]">
-        <a href="../public/rimini.jpg">
-          <img alt="Elektronik"
-            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-            src="../public/rimini.jpg">
-        </a>
-      </div>
-
-    </section>
+    <section class="gallery-grid gap-4 md:gap-6" id="galleryGrid"></section>
 
 
     <!-- Gallery Navigation / Pagination -->
-    <!-- <div class="mt-16 flex justify-center">
-      <nav class="inline-flex items-center p-1 bg-surface-container-low rounded-full">
+    <div class="mt-16 flex justify-center">
+      <nav class="inline-flex items-center p-1 bg-surface-container-low rounded-full" id="galleryPagination" aria-label="Paginacja galerii">
         <button
-          class="w-12 h-12 flex items-center justify-center rounded-full hover:bg-white transition-all text-primary">
+          class="w-12 h-12 flex items-center justify-center rounded-full hover:bg-white transition-all text-primary disabled:opacity-50 disabled:cursor-not-allowed"
+          id="galleryPrev"
+          type="button"
+          aria-label="Poprzednia strona galerii">
           <span class="material-symbols-outlined" data-icon="chevron_left">chevron_left</span>
         </button>
-        <button class="px-5 py-2 rounded-full bg-primary text-on-primary font-bold shadow-md">1</button>
+        <div class="flex items-center" id="galleryPages"></div>
         <button
-          class="px-5 py-2 rounded-full hover:bg-white text-on-surface-variant font-medium transition-all">2</button>
-        <button
-          class="px-5 py-2 rounded-full hover:bg-white text-on-surface-variant font-medium transition-all">3</button>
-        <button
-          class="w-12 h-12 flex items-center justify-center rounded-full hover:bg-white transition-all text-primary">
+          class="w-12 h-12 flex items-center justify-center rounded-full hover:bg-white transition-all text-primary disabled:opacity-50 disabled:cursor-not-allowed"
+          id="galleryNext"
+          type="button"
+          aria-label="Nastepna strona galerii">
           <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
         </button>
       </nav>
-    </div> -->
+    </div> 
   </main>
 
 
@@ -229,20 +184,25 @@
   </footer>
 
   <!-- Simplified Lightbox Background Overlay (Hidden State Example) -->
-  <div class="hidden fixed inset-0 z-[100] bg-on-surface/95 flex items-center justify-center p-6 md:p-12" id="lightbox">
-    <button class="absolute top-8 right-8 text-white p-2">
+  <div class="hidden fixed inset-0 z-[100] bg-on-surface/95 flex items-center justify-center p-6 md:p-12" id="lightbox" aria-hidden="true">
+    <button class="absolute top-8 right-8 text-white p-2" id="lightboxClose" type="button" aria-label="Zamknij podglad">
       <span class="material-symbols-outlined text-4xl" data-icon="close">close</span>
     </button>
+    <button class="absolute left-4 md:left-8 text-white/90 hover:text-white p-2" id="lightboxPrev" type="button" aria-label="Poprzednie zdjecie">
+      <span class="material-symbols-outlined text-4xl" data-icon="chevron_left">chevron_left</span>
+    </button>
+    <button class="absolute right-4 md:right-8 text-white/90 hover:text-white p-2" id="lightboxNext" type="button" aria-label="Nastepne zdjecie">
+      <span class="material-symbols-outlined text-4xl" data-icon="chevron_right">chevron_right</span>
+    </button>
     <div class="max-w-5xl w-full h-full flex flex-col items-center justify-center">
-      <img alt="Full size gallery" class="max-h-[819px] w-auto object-contain rounded-lg shadow-2xl"
-        data-alt="Full size technical workshop photo"
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGpoI0LY7bQfRvO8HsDSQe3Z_G2nG5c3cJT_T3k1hidwVRKoZhFyamOdP-gtjTSLlMaeE8cwnbtktwOfbYyU4QkzcNmwHCefZlm9jaRkT4fwUdlomKd1hYPWDhGa1hJEUPyxAYO2HA7YsZtdw8gbAL9kPVGBIJXB8vA1d-eoyFTpqmcbBgdlSz2ylj38LcsZZWh_qIWjdPFtvp15yvh-xTQ7PLjVST4Sx9sbRL8FaKN5y7K2FLEkISAxz37j8iqf0DNP87M2uJbFI" />
+      <img alt="Podglad zdjecia" class="max-h-[819px] w-auto object-contain rounded-lg shadow-2xl" id="lightboxImage" src="../public/placeholder.jpg" />
       <div class="mt-8 text-center text-white">
-        <h2 class="font-headline text-2xl font-bold">Praktyka zawodowa w Bolonii</h2>
-        <p class="mt-2 text-white/70 font-body">Wspomnienie z obsługi zaawansowanych systemów sterowania CNC.</p>
+        <h2 class="font-headline text-2xl font-bold" id="lightboxTitle">Podglad fotografii</h2>
+        <p class="mt-2 text-white/70 font-body" id="lightboxDescription">Wybierz zdjecie z galerii, aby zobaczyc szczegoly.</p>
       </div>
     </div>
   </div>
+  <script src="../scripts/gallery.js"></script>
 </body>
 
 </html>
