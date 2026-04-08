@@ -19,7 +19,7 @@
 body {
     background-color: var(--green-100);
     color: var(--text-dark);
-    background-image: url("../gr1/public/rimini.jpg");
+    background-image: url("./gr1/public/rimini.jpg");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100% auto;
