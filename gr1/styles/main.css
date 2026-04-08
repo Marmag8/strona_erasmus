@@ -16,6 +16,66 @@ body {
           gap: 1.25rem;
     }
 
+        .social-links {
+          display: flex;
+          align-items: center;
+          gap: 0.7rem;
+          margin-left: 0.25rem;
+        }
+
+        .social-pill {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+              padding: 0.5rem 0.72rem;
+          border-radius: 9999px;
+              border: 1.5px solid currentColor;
+              background-color: rgba(255, 255, 255, 0.55);
+          text-decoration: none;
+              font-size: 0.7rem;
+          font-weight: 700;
+          letter-spacing: 0.01em;
+              transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+          box-shadow: 0 10px 24px rgba(0, 59, 114, 0.08);
+        }
+
+        .social-pill:hover {
+          transform: translateY(-1px);
+              background-color: rgba(255, 255, 255, 0.9);
+          box-shadow: 0 14px 28px rgba(0, 59, 114, 0.14);
+        }
+
+        .social-pill__icon {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+              width: 1.2rem;
+              height: 1.2rem;
+          border-radius: 9999px;
+          flex: 0 0 auto;
+        }
+
+        .social-pill__icon svg {
+              width: 0.8rem;
+              height: 0.8rem;
+        }
+
+        .social-pill--facebook {
+              color: #0f5bd3;
+        }
+
+        .social-pill--facebook .social-pill__icon {
+              background: rgba(15, 91, 211, 0.12);
+        }
+
+        .social-pill--youtube {
+              color: #d92323;
+        }
+
+        .social-pill--youtube .social-pill__icon {
+              background: rgba(217, 35, 35, 0.12);
+        }
+
     @media (max-width: 768px) {
           .nav-links {
             gap: 0.6rem;
@@ -23,6 +83,19 @@ body {
 
           .nav-links a {
             font-size: 0.78rem;
+          }
+
+          .social-links {
+        gap: 0.5rem;
+          }
+
+          .social-pill {
+            padding: 0.48rem 0.62rem;
+            font-size: 0.68rem;
+          }
+
+          .social-pill span:last-child {
+        display: none;
           }
 
           .section-table-link {
