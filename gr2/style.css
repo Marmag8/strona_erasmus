@@ -1,0 +1,889 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #222;
+    font-family: "Poppins", sans-serif;
+    background: #f5f4f0;
+}
+
+/* strzałka do góry */
+
+.do-gory {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.do-gory.widoczna {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.do-gory:hover {
+    background: #444;
+}
+
+/* nawigacja */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2em 3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    transition: background 0.4s, box-shadow 0.4s;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+nav.przewinieta {
+    background: rgba(20, 20, 20, 0.92);
+    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    backdrop-filter: blur(6px);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.social-ikony {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-link {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.social-link:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2em;
+}
+
+nav li a {
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+
+nav li a:hover {
+    opacity: 1;
+}
+
+/* header */
+
+header {
+    background-image: url(2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+#header_info {
+    text-align: center;
+    color: white;
+    z-index: 2;
+    position: relative;
+    padding: 0 20px;
+}
+
+.nad-tytul {
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+#header_info h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+#header_info p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-bottom: 35px;
+}
+
+.przycisk {
+    display: inline-block;
+    padding: 14px 36px;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    border: 2px solid rgba(255,255,255,0.7);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.przycisk:hover {
+    background: white;
+    color: #222;
+    border-color: white;
+}
+
+.header-scroll {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    opacity: 0.5;
+    font-size: 1.4rem;
+    animation: skaczstrzalka 1.5s ease-in-out infinite;
+    z-index: 2;
+}
+
+@keyframes skaczstrzalka {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(8px); }
+}
+
+/* pasek ze zdjęciami */
+
+.pasek {
+    height: 22vh;
+    overflow: hidden;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+}
+
+.zdjecia {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    animation: przesun 60s linear infinite;
+}
+
+.zdjecia img {
+    width: 360px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+    flex-shrink: 0;
+    opacity: 0.85;
+}
+
+/* nagłówki sekcji */
+
+.sekcja-naglowek {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sekcja-naglowek h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.sekcja-opis {
+    color: #888;
+    font-size: 0.95rem;
+}
+
+/* o projekcie */
+
+#o_projekcie {
+    padding: 90px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.kontener {
+    display: flex;
+    gap: 24px;
+}
+
+.karta {
+    flex: 1;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e8e8e8;
+}
+
+.karta p {
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.karta p:last-child {
+    border-bottom: none;
+}
+
+.karta strong {
+    color: #111;
+}
+
+.opis {
+    flex: 1;
+    background: #1a1a1a;
+    color: #f0f0f0;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.opis h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.opis p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+/* uczestnicy */
+
+#uczestnicy {
+    padding: 90px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f5f4f0;
+}
+
+.uczestnicy-kontener {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.uczestnik-karta {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #e8e8e8;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.uczestnik-karta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.uczestnik-karta img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    background: #ddd;
+}
+
+.uczestnik-karta h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.uczestnik-karta p {
+    font-size: 0.85rem;
+    color: #888;
+    font-weight: 400;
+}
+
+/* opinie */
+
+#opinie {
+    padding: 90px 40px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.opinie-kontener {
+    position: relative;
+    min-height: 200px;
+}
+
+.opinia {
+    display: none;
+    background: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    border: 1px solid #e8e8e8;
+    animation: wejscie 0.35s ease;
+}
+
+.opinia.aktywna {
+    display: block;
+}
+
+.cytat {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-style: italic;
+    border-left: 3px solid #1a1a1a;
+    padding-left: 20px;
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.autor img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #ddd;
+}
+
+.autor strong {
+    display: block;
+    color: #111;
+    font-size: 0.95rem;
+}
+
+.autor span {
+    color: #999;
+    font-size: 0.82rem;
+}
+
+.opinie-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.opinie-nav button {
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.opinie-nav button:hover {
+    background: #444;
+}
+
+#licznik {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+#stopka {
+    background: #111;
+    color: #aaa;
+    font-size: 0.9rem;
+    padding: 60px 20px 0;
+}
+
+.stopka-srodek {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.stopka-kolumna {
+    flex: 1;
+    min-width: 180px;
+}
+
+.stopka-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.stopka-kolumna p {
+    margin: 0 0 8px;
+    line-height: 1.7;
+}
+
+.stopka-kolumna span {
+    color: #fff;
+    font-weight: 500;
+}
+
+.stopka-kolumna h4 {
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0 0 18px;
+}
+
+.stopka-kolumna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stopka-kolumna ul li {
+    margin-bottom: 10px;
+}
+
+.stopka-kolumna ul a {
+    color: #aaa;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.stopka-kolumna ul a:hover {
+    color: #fff;
+}
+
+.stopka-dol {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.stopka-dol p {
+    margin: 0;
+}
+
+.stopka-kolumna a{
+    text-decoration: none;
+    color: white;
+}
+
+/* animacje */
+
+@keyframes wejscie {
+    from {
+    opacity: 0;
+    transform: translateY(12px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+@keyframes przesun {
+    0% {
+    transform: translateX(0);
+    }
+    100% {
+    transform: translateX(calc(-50% - 8px));
+    }
+}
+
+/* RESPONSYWNOŚĆ */
+
+@media (max-width: 1024px) {
+    nav {
+        padding: 1em 2em;
+    }
+
+    nav ul {
+        gap: 1.5em;
+    }
+
+    nav li a {
+        font-size: 0.85rem;
+    }
+
+    #header_info h1 {
+        font-size: 3rem;
+    }
+
+    .kontener {
+        flex-direction: column;
+    }
+
+    .uczestnicy-siatka {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    #o_projekcie {
+        padding: 70px 30px;
+    }
+
+    #uczestnicy {
+        padding: 70px 30px;
+    }
+
+    #opinie {
+        padding: 70px 30px;
+    }
+
+    .stopka-srodek {
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1em;
+        gap: 1em;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .social-ikony {
+        order: -1;
+        margin-bottom: 10px;
+    }
+
+    #logo {
+        font-size: 1.3rem;
+    }
+
+    #header_info h1 {
+        font-size: 2.5rem;
+    }
+
+    #header_info p {
+        font-size: 1rem;
+    }
+
+    .nad-tytul {
+        font-size: 0.75rem;
+    }
+
+    .pasek {
+        height: 18vh;
+    }
+
+    .zdjecia img {
+        width: 280px;
+        height: 140px;
+    }
+
+    .sekcja-naglowek h2 {
+        font-size: 1.7rem;
+    }
+
+    .uczestnicy-siatka {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .uczestnik-karta img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .uczestnik-karta h3 {
+        font-size: 1rem;
+    }
+
+    .uczestnik-karta p {
+        font-size: 0.8rem;
+    }
+
+    #o_projekcie {
+        padding: 60px 20px;
+    }
+
+    #uczestnicy {
+        padding: 60px 20px;
+    }
+
+    #opinie {
+        padding: 60px 20px;
+    }
+
+    .opinia {
+        padding: 30px;
+    }
+
+    .stopka-srodek {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .stopka-kolumna {
+        min-width: 100%;
+    }
+
+    .stopka-dol {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0.8em;
+    }
+
+    nav ul {
+        gap: 0.8em;
+    }
+
+    nav li a {
+        font-size: 0.75rem;
+    }
+
+    .social-ikony a {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    #logo {
+        font-size: 1.1rem;
+    }
+
+    #header_info h1 {
+        font-size: 1.8rem;
+    }
+
+    #header_info p {
+        font-size: 0.9rem;
+    }
+
+    .przycisk {
+        padding: 12px 28px;
+        font-size: 0.85rem;
+    }
+
+    .pasek {
+        height: 15vh;
+    }
+
+    .zdjecia img {
+        width: 220px;
+        height: 110px;
+    }
+
+    .sekcja-naglowek h2 {
+        font-size: 1.5rem;
+    }
+
+    .sekcja-opis {
+        font-size: 0.85rem;
+    }
+
+    .uczestnicy-siatka {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .uczestnik-karta {
+        padding: 20px;
+    }
+
+    .uczestnik-karta img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .uczestnik-karta h3 {
+        font-size: 0.95rem;
+    }
+
+    .uczestnik-karta p {
+        font-size: 0.75rem;
+    }
+
+    #o_projekcie {
+        padding: 50px 15px;
+    }
+
+    #uczestnicy {
+        padding: 50px 15px;
+    }
+
+    #opinie {
+        padding: 50px 15px;
+    }
+
+    .karta {
+        padding: 20px;
+    }
+
+    .karta p {
+        font-size: 0.85rem;
+        padding: 10px 0;
+    }
+
+    .opis {
+        padding: 20px;
+    }
+
+    .opis h3 {
+        font-size: 1.1rem;
+    }
+
+    .opis p {
+        font-size: 0.85rem;
+    }
+
+    .opinia {
+        padding: 20px;
+    }
+
+    .cytat {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+
+    .autor img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .autor strong {
+        font-size: 0.9rem;
+    }
+
+    .autor span {
+        font-size: 0.75rem;
+    }
+
+    .opinie-nav button {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    .do-gory {
+        width: 42px;
+        height: 42px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 18px;
+    }
+
+    #stopka {
+        padding: 40px 15px 0;
+        font-size: 0.85rem;
+    }
+
+    .stopka-logo {
+        font-size: 1.3rem;
+    }
+
+    .stopka-kolumna h4 {
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    #header_info h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.6em;
+    }
+
+    .social-ikony {
+        gap: 8px;
+    }
+
+    .uczestnik-karta img {
+        width: 80px;
+        height: 80px;
+    }
+}

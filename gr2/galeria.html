@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria – ZSEiI Erasmus+</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        .naglowek-galeria {
+            min-height: 45vh;
+            background-image: url(zdjecie.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            filter: brightness(0.9);
+            position: relative;
+            padding-top: 120px;
+            padding-bottom: 40px;
+        }
+
+        .naglowek-galeria::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+        }
+
+        .naglowek-galeria h1 {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .filtry {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding: 40px 20px 10px;
+            background: #f9f9f9;
+        }
+
+        .filtry button {
+            padding: 10px 24px;
+            border: 2px solid #333;
+            background: transparent;
+            color: #333;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .filtry button:hover,
+        .filtry button.aktywny {
+            background: #333;
+            color: #fff;
+        }
+
+        .sekcja-galeria {
+            background: #f9f9f9;
+            padding: 30px 20px 60px;
+        }
+
+        .siatka {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 18px;
+        }
+
+        .element {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+            aspect-ratio: 4 / 3;
+        }
+
+        .element img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s, filter 0.5s;
+        }
+
+        .element:hover img {
+            transform: scale(1.08);
+            filter: brightness(0.75);
+        }
+
+        .element .podpis {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 14px 16px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.7));
+            color: #fff;
+            font-size: 0.9rem;
+            font-weight: 500;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: 0.4s;
+        }
+
+        .element:hover .podpis {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .podglad {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.35s;
+        }
+
+        .podglad.widoczny {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .podglad img {
+            max-width: 90vw;
+            max-height: 85vh;
+            border-radius: 10px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.6);
+            transform: scale(0.92);
+            transition: transform 0.35s;
+        }
+
+        .podglad.widoczny img {
+            transform: scale(1);
+        }
+
+        .podglad .zamknij {
+            position: absolute;
+            top: 25px;
+            right: 35px;
+            font-size: 48px;
+            color: #fff;
+            cursor: pointer;
+            line-height: 1;
+            transition: 0.3s;
+            user-select: none;
+        }
+
+        .podglad .zamknij:hover {
+            color: #ccc;
+        }
+
+        .podglad .strzalka {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 50px;
+            color: #fff;
+            cursor: pointer;
+            user-select: none;
+            padding: 10px 18px;
+            transition: 0.3s;
+            border-radius: 50%;
+        }
+
+        .podglad .strzalka:hover {
+            background: rgba(255,255,255,0.15);
+        }
+
+        .podglad .strzalka.lewo {
+            left: 20px;
+        }
+
+        .podglad .strzalka.prawo {
+            right: 20px;
+        }
+
+        .podglad .licznik {
+            position: absolute;
+            bottom: 25px;
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+
+        .stopka {
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.85rem;
+        }
+
+        .stopka a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @keyframes pojawienie {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @media (max-width: 1024px) {
+            .naglowek-galeria h1 {
+                font-size: 2.5rem;
+            }
+
+            .siatka {
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+                gap: 15px;
+            }
+
+            .filtry {
+                padding: 30px 15px 10px;
+            }
+
+            .filtry button {
+                padding: 8px 20px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .naglowek-galeria {
+                height: 35vh;
+            }
+
+            .naglowek-galeria h1 {
+                font-size: 2rem;
+                padding: 0 20px;
+            }
+
+            .siatka {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 12px;
+            }
+
+            .sekcja-galeria {
+                padding: 20px 15px 40px;
+            }
+
+            .filtry {
+                gap: 8px;
+                padding: 25px 15px 10px;
+            }
+
+            .filtry button {
+                padding: 7px 16px;
+                font-size: 0.85rem;
+            }
+
+            .podglad .strzalka {
+                font-size: 36px;
+                padding: 6px 12px;
+            }
+
+            .podglad .strzalka.lewo {
+                left: 8px;
+            }
+
+            .podglad .strzalka.prawo {
+                right: 8px;
+            }
+
+            .podglad .zamknij {
+                top: 15px;
+                right: 15px;
+                font-size: 36px;
+            }
+
+            .podglad .licznik {
+                bottom: 15px;
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .naglowek-galeria {
+                height: 30vh;
+            }
+
+            .naglowek-galeria h1 {
+                font-size: 1.6rem;
+            }
+
+            .siatka {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .filtry {
+                gap: 6px;
+                padding: 20px 10px 10px;
+            }
+
+            .filtry button {
+                padding: 6px 14px;
+                font-size: 0.8rem;
+            }
+
+            .sekcja-galeria {
+                padding: 15px 10px 30px;
+            }
+
+            .element .podpis {
+                font-size: 0.8rem;
+                padding: 10px 12px;
+            }
+
+            .podglad img {
+                max-width: 95vw;
+                max-height: 80vh;
+            }
+
+            .podglad .strzalka {
+                font-size: 32px !important;
+                padding: 0 !important;
+                background: rgba(255, 255, 255, 0.9) !important;
+                color: #000 !important;
+                width: 45px !important;
+                height: 45px !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                border-radius: 50% !important;
+                border: 2px solid #000 !important;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.5) !important;
+                z-index: 1002 !important;
+            }
+
+            .podglad .strzalka.lewo {
+                left: 5px !important;
+            }
+
+            .podglad .strzalka.prawo {
+                right: 5px !important;
+            }
+            
+            .podglad img {
+                position: relative;
+                z-index: 1000;
+            }
+            
+            .podglad .strzalka:hover {
+                background: rgba(255, 255, 255, 1) !important;
+            }
+
+            .podglad .zamknij {
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .naglowek-galeria h1 {
+                font-size: 1.4rem;
+            }
+
+            .filtry button {
+                padding: 5px 12px;
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+
+<a href="#" class="do-gory">↑</a>
+
+<body>
+    <header class="naglowek-galeria">
+        <nav>
+            <a href="index.html" id="logo">Erasmus+</a>
+            <div class="social-ikony">
+                <a href="https://www.youtube.com/@zseii" target="_blank" title="YouTube ZSEiI">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/zseii" target="_blank" title="Facebook ZSEiI">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="index.html#projekt">O projekcie</a></li>
+                <li><a href="index.html#uczestnicy">Lista uczestników</a></li>
+                <li><a href="index.html#opinie">Opinie uczestników</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+        <h1>Galeria zdjęć</h1>
+    </header>
+
+    <div class="filtry">
+        <button class="aktywny" data-filtr="wszystkie">Wszystkie</button>
+        <button data-filtr="praktyki">Praktyki</button>
+        <button data-filtr="zwiedzanie">Zwiedzanie</button>
+        <button data-filtr="grupa">Zdjęcia grupowe</button>
+        <button data-filtr="inne">Inne</button>
+    </div>
+
+    <section class="sekcja-galeria">
+        <div class="siatka" id="siatkaZdjec">
+            <!-- praktyki -->
+            <div class="element" kategoria="praktyki">
+                <img src="1.jpg" alt="Praktyki zawodowe 1">
+                <div class="podpis">Praktyki zawodowe – dzień 1</div>
+            </div>
+            <div class="element" kategoria="praktyki">
+                <img src="1.jpg" alt="Praktyki zawodowe 2">
+                <div class="podpis">Praca w laboratorium</div>
+            </div>
+            <div class="element" kategoria="praktyki">
+                <img src="1.jpg" alt="Praktyki zawodowe 3">
+                <div class="podpis">Szkolenie techniczne</div>
+            </div>
+
+            <!-- zwiedzanie -->
+            <div class="element" kategoria="zwiedzanie">
+                <img src="1.jpg" alt="Zwiedzanie Rimini">
+                <div class="podpis">Centrum Rimini</div>
+            </div>
+            <div class="element" kategoria="zwiedzanie">
+                <img src="1.jpg" alt="Plaża w Rimini">
+                <div class="podpis">Plaża w Rimini</div>
+            </div>
+            <div class="element" kategoria="zwiedzanie">
+                <img src="1.jpg" alt="Zabytki Włoch">
+                <div class="podpis">Zabytki Włoch</div>
+            </div>
+
+            <!-- zdjecia grupowe -->
+            <div class="element" kategoria="grupa">
+                <img src="1.jpg" alt="Zdjęcie grupowe 1">
+                <div class="podpis">Cała grupa – wyjazd</div>
+            </div>
+            <div class="element" kategoria="grupa">
+                <img src="1.jpg" alt="Zdjęcie grupowe 2">
+                <div class="podpis">Grupa przed firmą partnerską</div>
+            </div>
+            <div class="element" kategoria="grupa">
+                <img src="1.jpg" alt="Zdjęcie grupowe 3">
+                <div class="podpis">Pamiątkowe zdjęcie</div>
+            </div>
+
+            <!-- inne -->
+            <div class="element" kategoria="inne">
+                <img src="1.jpg" alt="Kuchnia włoska">
+                <div class="podpis">Kuchnia włoska 🍕</div>
+            </div>
+            <div class="element" kategoria="inne">
+                <img src="1.jpg" alt="Wolny czas">
+                <div class="podpis">Czas wolny</div>
+            </div>
+            <div class="element" kategoria="inne">
+                <img src="1.jpg" alt="Zachód słońca">
+                <div class="podpis">Zachód słońca nad Adriatykiem</div>
+            </div>
+
+            <!-- dodatkowe -->
+            <div class="element" kategoria="praktyki">
+                <img src="1.jpg" alt="Praktyki 4">
+                <div class="podpis">Montaż elektroniki</div>
+            </div>
+            <div class="element" kategoria="zwiedzanie">
+                <img src="1.jpg" alt="Zwiedzanie 4">
+                <div class="podpis">Łuk Augusta w Rimini</div>
+            </div>
+            <div class="element" kategoria="grupa">
+                <img src="1.jpg" alt="Zdjęcie grupowe 4">
+                <div class="podpis">Zakończenie praktyk</div>
+            </div>
+            <div class="element" kategoria="inne">
+                <img src="1.jpg" alt="Certyfikaty">
+                <div class="podpis">Certyfikaty Europass</div>
+            </div>
+            <div class="element" kategoria="praktyki">
+                <img src="1.jpg" alt="Praktyki 5">
+                <div class="podpis">Programowanie sterowników</div>
+            </div>
+            <div class="element" kategoria="zwiedzanie">
+                <img src="1.jpg" alt="Zwiedzanie 5">
+                <div class="podpis">San Marino</div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="podglad" id="podglad">
+        <span class="zamknij" id="btnZamknij">×</span>
+        <span class="strzalka lewo" id="btnPoprzednie">‹</span>
+        <img src="" alt="Podgląd" id="zdjeciePodglad">
+        <span class="strzalka prawo" id="btnNastepne">›</span>
+        <div class="licznik" id="licznik"></div>
+    </div>
+
+    <footer class="stopka">
+        <p>© 2026 ZSEiI Erasmus+ | <a href="index.html">Powrót na stronę główną</a></p>
+    </footer>
+
+    <script>
+        // strzalka do gory
+        window.onscroll = function() {
+            if (window.scrollY > 300) {
+                document.querySelector('.do-gory').classList.add('widoczna');
+            } else {
+                document.querySelector('.do-gory').classList.remove('widoczna');
+            }
+        };
+
+        // filtrowanie
+        var przyciski = document.querySelectorAll('.filtry button');
+        var elementy = document.querySelectorAll('.element');
+
+        przyciski.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                przyciski.forEach(function(b) { b.classList.remove('aktywny'); });
+                btn.classList.add('aktywny');
+
+                var kat = btn.dataset.filtr;
+
+                elementy.forEach(function(el) {
+                    if (kat === 'wszystkie' || el.getAttribute('kategoria') === kat) {
+                        el.style.display = '';
+                        el.style.animation = 'pojawienie 0.45s ease';
+                    } else {
+                        el.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // podglad zdjecia
+        var podglad = document.getElementById('podglad');
+        var zdjeciePodglad = document.getElementById('zdjeciePodglad');
+        var licznik = document.getElementById('licznik');
+        var widoczne = [];
+        var nrZdjecia = 0;
+
+        function pobierzWidoczne() {
+            var lista = [];
+            document.querySelectorAll('.element').forEach(function(el) {
+                if (el.style.display !== 'none') {
+                    lista.push(el);
+                }
+            });
+            return lista;
+        }
+
+        function otworz(nr) {
+            widoczne = pobierzWidoczne();
+            nrZdjecia = nr;
+            pokaz();
+            podglad.classList.add('widoczny');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function pokaz() {
+            var obr = widoczne[nrZdjecia].querySelector('img');
+            zdjeciePodglad.src = obr.src;
+            zdjeciePodglad.alt = obr.alt;
+            licznik.textContent = (nrZdjecia + 1) + ' / ' + widoczne.length;
+        }
+
+        function zamknij() {
+            podglad.classList.remove('widoczny');
+            document.body.style.overflow = '';
+        }
+
+        document.getElementById('btnZamknij').addEventListener('click', zamknij);
+
+        podglad.addEventListener('click', function(e) {
+            if (e.target === podglad) zamknij();
+        });
+
+        document.getElementById('btnPoprzednie').addEventListener('click', function(e) {
+            e.stopPropagation();
+            nrZdjecia = (nrZdjecia - 1 + widoczne.length) % widoczne.length;
+            pokaz();
+        });
+
+        document.getElementById('btnNastepne').addEventListener('click', function(e) {
+            e.stopPropagation();
+            nrZdjecia = (nrZdjecia + 1) % widoczne.length;
+            pokaz();
+        });
+
+        // klawiatura
+        document.addEventListener('keydown', function(e) {
+            if (!podglad.classList.contains('widoczny')) return;
+            if (e.key === 'Escape') zamknij();
+            if (e.key === 'ArrowLeft') {
+                nrZdjecia = (nrZdjecia - 1 + widoczne.length) % widoczne.length;
+                pokaz();
+            }
+            if (e.key === 'ArrowRight') {
+                nrZdjecia = (nrZdjecia + 1) % widoczne.length;
+                pokaz();
+            }
+        });
+
+        // klikniecie w zdjecie
+        elementy.forEach(function(el) {
+            el.addEventListener('click', function() {
+                var lista = pobierzWidoczne();
+                var nr = lista.indexOf(el);
+                otworz(nr);
+            });
+        });
+    </script>
+
+</body>
+</html>
