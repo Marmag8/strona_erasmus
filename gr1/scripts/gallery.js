@@ -19,80 +19,80 @@
 
 	const galleryItems = [
 		{
-			src: "../public/idea.jpg",
+			src: "../public/gallery/idea.jpg",
 			alt: "Przygotowania projektowe",
 			title: "Przygotowania projektowe",
 			description: "Uczestnicy podczas warsztatów i zajęć organizacyjnych.",
 		},
 		{
-			src: "../public/italy.jpg",
+			src: "../public/gallery/italy.jpg",
 			alt: "Rimini i okolice",
 			title: "Rimini i okolice",
 			description: "Pierwsze chwile po przyjeździe i odkrywanie miasta.",
 		},
 		{
-			src: "../public/rimini.jpg",
+			src: "../public/gallery/rimini.jpg",
 			alt: "Zajęcia w terenie",
 			title: "Zajęcia w terenie",
 			description: "Nauka przez praktykę i poznawanie lokalnych realiów.",
 		},
 		{
-			src: "../public/placeholder.jpg",
+			src: "../public/gallery/placeholder.jpg",
 			alt: "Działania zespołowe",
 			title: "Działania zespołowe",
 			description: "Wspólna praca i realizacja zadań projektowych.",
 		},
 		{
-			src: "../public/italy.jpg",
+			src: "../public/gallery/italy.jpg",
 			alt: "Wspólna mobilność",
 			title: "Wspólna mobilność",
 			description: "Codzienne aktywności i praktyki zawodowe.",
 		},
 		{
-			src: "../public/idea.jpg",
+			src: "../public/gallery/idea.jpg",
 			alt: "Planowanie etapów",
 			title: "Planowanie etapów",
 			description: "Spotkania robocze i podział obowiązków.",
 		},
 		{
-			src: "../public/rimini.jpg",
+			src: "../public/gallery/rimini.jpg",
 			alt: "Podsumowanie dnia",
 			title: "Podsumowanie dnia",
 			description: "Omówienie efektów i wymiana doświadczeń.",
 		},
 		{
-			src: "../public/placeholder.jpg",
+			src: "../public/gallery/placeholder.jpg",
 			alt: "Integracja grupy",
 			title: "Integracja grupy",
 			description: "Czas wolny i budowanie relacji między uczestnikami.",
 		},
 		{
-			src: "../public/italy.jpg",
+			src: "../public/gallery/italy.jpg",
 			alt: "Zakończenie mobilności",
 			title: "Zakończenie mobilności",
 			description: "Finał projektu i wspólne wspomnienia z wyjazdu.",
 		},
 		{
-			src: "../public/rimini.jpg",
+			src: "../public/gallery/rimini.jpg",
 			alt: "Dokumentacja projektu",
 			title: "Dokumentacja projektu",
 			description: "Materiały foto dokumentujące przebieg działań.",
 		},
 		{
-			src: "../public/idea.jpg",
+			src: "../public/gallery/idea.jpg",
 			alt: "Rozwój kompetencji",
 			title: "Rozwój kompetencji",
 			description: "Zdobywanie nowych umiejętności zawodowych i językowych.",
 		},
 		{
-			src: "../public/placeholder.jpg",
+			src: "../public/gallery/placeholder.jpg",
 			alt: "Efekty projektu",
 			title: "Efekty projektu",
 			description: "Osiągnięcia uczestników i najważniejsze rezultaty.",
 		},
 	];
 
-	const perPage = 4;
+	const perPage = 12;
 	const totalPages = Math.ceil(galleryItems.length / perPage);
 
 	let currentPage = 1;
