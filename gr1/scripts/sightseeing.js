@@ -22,73 +22,73 @@
 			src: "../public/gallery/idea.jpg",
 			alt: "Przygotowania projektowe",
 			title: "Przygotowania projektowe",
-			description: "Uczestnicy podczas warsztatów i zajęć organizacyjnych.",
+			description: "Uczestnicy podczas warsztatow i zajec organizacyjnych.",
 		},
 		{
 			src: "../public/gallery/italy.jpg",
 			alt: "Rimini i okolice",
 			title: "Rimini i okolice",
-			description: "Pierwsze chwile po przyjeździe i odkrywanie miasta.",
+			description: "Pierwsze chwile po przyjezdzie i odkrywanie miasta.",
 		},
 		{
 			src: "../public/gallery/rimini.jpg",
-			alt: "Zajęcia w terenie",
-			title: "Zajęcia w terenie",
-			description: "Nauka przez praktykę i poznawanie lokalnych realiów.",
+			alt: "Zajecia w terenie",
+			title: "Zajecia w terenie",
+			description: "Nauka przez praktyke i poznawanie lokalnych realiow.",
 		},
 		{
 			src: "../public/gallery/placeholder.jpg",
-			alt: "Działania zespołowe",
-			title: "Działania zespołowe",
-			description: "Wspólna praca i realizacja zadań projektowych.",
+			alt: "Dzialania zespolowe",
+			title: "Dzialania zespolowe",
+			description: "Wspolna praca i realizacja zadan projektowych.",
 		},
 		{
 			src: "../public/gallery/italy.jpg",
-			alt: "Wspólna mobilność",
-			title: "Wspólna mobilność",
-			description: "Codzienne aktywności i praktyki zawodowe.",
+			alt: "Wspolna mobilnosc",
+			title: "Wspolna mobilnosc",
+			description: "Codzienne aktywnosci i praktyki zawodowe.",
 		},
 		{
 			src: "../public/gallery/idea.jpg",
-			alt: "Planowanie etapów",
-			title: "Planowanie etapów",
-			description: "Spotkania robocze i podział obowiązków.",
+			alt: "Planowanie etapow",
+			title: "Planowanie etapow",
+			description: "Spotkania robocze i podzial obowiazkow.",
 		},
 		{
 			src: "../public/gallery/rimini.jpg",
 			alt: "Podsumowanie dnia",
 			title: "Podsumowanie dnia",
-			description: "Omówienie efektów i wymiana doświadczeń.",
+			description: "Omowienie efektow i wymiana doswiadczen.",
 		},
 		{
 			src: "../public/gallery/placeholder.jpg",
 			alt: "Integracja grupy",
 			title: "Integracja grupy",
-			description: "Czas wolny i budowanie relacji między uczestnikami.",
+			description: "Czas wolny i budowanie relacji miedzy uczestnikami.",
 		},
 		{
 			src: "../public/gallery/italy.jpg",
-			alt: "Zakończenie mobilności",
-			title: "Zakończenie mobilności",
-			description: "Finał projektu i wspólne wspomnienia z wyjazdu.",
+			alt: "Zakonczenie mobilnosci",
+			title: "Zakonczenie mobilnosci",
+			description: "Final projektu i wspolne wspomnienia z wyjazdu.",
 		},
 		{
 			src: "../public/gallery/rimini.jpg",
 			alt: "Dokumentacja projektu",
 			title: "Dokumentacja projektu",
-			description: "Materiały foto dokumentujące przebieg działań.",
+			description: "Materialy foto dokumentujace przebieg dzialan.",
 		},
 		{
 			src: "../public/gallery/idea.jpg",
-			alt: "Rozwój kompetencji",
-			title: "Rozwój kompetencji",
-			description: "Zdobywanie nowych umiejętności zawodowych i językowych.",
+			alt: "Rozwoj kompetencji",
+			title: "Rozwoj kompetencji",
+			description: "Zdobywanie nowych umiejetnosci zawodowych i jezykowych.",
 		},
 		{
 			src: "../public/gallery/placeholder.jpg",
 			alt: "Efekty projektu",
 			title: "Efekty projektu",
-			description: "Osiągnięcia uczestników i najważniejsze rezultaty.",
+			description: "Osiagniecia uczestnikow i najwazniejsze rezultaty.",
 		},
 	];
 
@@ -107,7 +107,7 @@
 		button.type = "button";
 		button.className = "block h-full w-full text-left";
 		button.setAttribute("data-index", String(index));
-		button.setAttribute("aria-label", `Otwórz zdjęcie: ${item.title}`);
+		button.setAttribute("aria-label", `Otworz zdjecie: ${item.title}`);
 
 		const img = document.createElement("img");
 		img.src = item.src;
@@ -134,7 +134,7 @@
 			pageButton.className =
 				"px-5 py-2 rounded-full text-on-surface-variant font-medium transition-all hover:bg-white";
 			pageButton.setAttribute("data-page", String(page));
-			pageButton.setAttribute("aria-label", `Przejdź do strony ${page}`);
+			pageButton.setAttribute("aria-label", `Przejdz do strony ${page}`);
 
 			if (page === currentPage) {
 				pageButton.className = "px-5 py-2 rounded-full bg-primary text-on-primary font-bold shadow-md";
