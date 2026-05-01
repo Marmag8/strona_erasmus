@@ -112,3 +112,27 @@ body {
             font-size: 1rem;
           }
     }
+
+    /* Participant collapse/expand functionality */
+    .participant-item {
+      transition: opacity 320ms cubic-bezier(.2,.9,.2,1), transform 320ms cubic-bezier(.2,.9,.2,1);
+      will-change: opacity, transform;
+    }
+
+    .participant-item.animate-in {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+
+    .participant-item.animate-out {
+      opacity: 0 !important;
+      transform: translateY(-10px) !important;
+    }
+
+    #toggle-participants {
+      cursor: pointer;
+    }
+
+    #toggle-participants:hover {
+      background-color: rgba(29, 95, 168, 0.9);
+    }

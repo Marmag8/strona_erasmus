@@ -191,7 +191,8 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div id="participants-wrapper" class="relative overflow-hidden transition-[max-height] duration-700 ease-in-out">
+          <div id="participants-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           <!-- SZABLON UCZESTNIKA -->
 
           <!-- <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
@@ -205,7 +206,7 @@
             </div>
           </article> -->
 
-          <article class="group overflow-hidden rounded-2xl bg-gradient-to-br from-primary/5 to-secondary/5 ring-2 ring-primary/50 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-gradient-to-br from-primary/5 to-secondary/5 ring-2 ring-primary/50 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/panuszewska.JPEG" alt="Beata Panuszewska" />
             </div>
@@ -215,7 +216,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-gradient-to-br from-primary/5 to-secondary/5 ring-2 ring-primary/50 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-gradient-to-br from-primary/5 to-secondary/5 ring-2 ring-primary/50 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/zalucki.JPEG" alt="Łukasz Załucki" />
             </div>
@@ -225,7 +226,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/golicz.JPEG" alt="Wiktor Golicz" />
             </div>
@@ -236,7 +237,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/maciejewski.JPEG" alt="Igor Maciejewski" />
             </div>
@@ -247,7 +248,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/dziedzic.JPEG" alt="Mateusz Dziedzic" />
             </div>
@@ -258,7 +259,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group hidden-item">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/kubik.JPEG" alt="Dawid Kubik" />
             </div>
@@ -269,7 +270,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group hidden-item">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/glinski.JPEG" alt="Bartosz Gliński" />
             </div>
@@ -280,7 +281,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group hidden-item">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/marczak.JPEG" alt="Jakub Marczak" />
             </div>
@@ -291,7 +292,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group hidden-item">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/gruszka.JPEG" alt="Maksymilian Gruszka" />
             </div>
@@ -302,7 +303,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group hidden-item">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/matusiewicz.JPEG" alt="Szymon Matusiewicz" />
             </div>
@@ -313,7 +314,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group hidden-item">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/sobala.JPEG" alt="Daniel Sobala" />
             </div>
@@ -324,7 +325,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group hidden-item">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/warzecha.JPEG" alt="Bartosz Warzecha" />
             </div>
@@ -335,7 +336,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group hidden-item">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/serbin.JPEG" alt="Filip Serbin" />
             </div>
@@ -346,7 +347,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group hidden-item">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/janik.JPEG" alt="Michał Janik" />
             </div>
@@ -357,7 +358,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group hidden-item">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/widlak.JPEG" alt="Julian Widłak" />
             </div>
@@ -368,7 +369,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group hidden-item">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/griszek.JPEG" alt="Michał Griszek" />
             </div>
@@ -379,7 +380,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group hidden-item">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/gosciniewicz.JPEG" alt="Szymon Gościniewicz" />
             </div>
@@ -390,7 +391,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group hidden-item">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/wnuk.JPEG" alt="Dawid Wnuk" />
             </div>
@@ -401,7 +402,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group hidden-item">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/garus.JPEG" alt="Michał Garus" />
             </div>
@@ -412,7 +413,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group hidden-item">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/paryz.JPEG" alt="Michał Paryż" />
             </div>
@@ -423,7 +424,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group hidden-item">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/jencki.JPEG" alt="Patryk Jencki" />
             </div>
@@ -434,7 +435,7 @@
             </div>
           </article>
 
-          <article class="group overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)]">
+          <article class="participant-item overflow-hidden rounded-2xl bg-surface-container-lowest ring-1 ring-outline-variant/30 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_rgba(0,59,114,0.45)] group hidden-item">
             <div class="relative overflow-hidden">
               <img class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" src="../public/participants/huszczo.JPEG" alt="Oliwier Huszczo" />
             </div>
@@ -444,6 +445,18 @@
               <p class="font-body text-slate-600 text-sm">Technik Programista</p>
             </div>
           </article>
+        </div>
+        <!-- Overlay for blurred effect -->
+        <div id="participants-overlay" class="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-white via-white/80 to-transparent backdrop-blur-[2px] transition-opacity duration-500 pointer-events-none"></div>
+        </div>
+
+        <!-- Toggle button -->
+        <div class="flex justify-center mt-12">
+          <button id="toggle-participants" class="inline-flex items-center gap-2 px-8 py-4 bg-primary text-on-primary rounded-full font-bold shadow-lg hover:shadow-primary/20 transition-all">
+            <span class="material-symbols-outlined">expand_more</span>
+            <span id="toggle-text">Pokaż więcej uczestników</span>
+          </button>
+        </div>
         </div>
       </div>
     </section>
@@ -694,6 +707,71 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleBtn = document.getElementById('toggle-participants');
+      const toggleText = document.getElementById('toggle-text');
+      const wrapper = document.getElementById('participants-wrapper');
+      const overlay = document.getElementById('participants-overlay');
+      const container = document.getElementById('participants-container');
+      let isExpanded = false;
+
+      function calculateHeights() {
+        if (isExpanded) {
+          wrapper.style.maxHeight = wrapper.scrollHeight + 'px';
+        } else {
+          const cards = container.children;
+          if (cards.length > 0) {
+            const cardHeight = cards[0].offsetHeight;
+            const gap = parseInt(window.getComputedStyle(container).gap) || 24;
+            // 1 row + gap + half of the next row
+            wrapper.style.maxHeight = (cardHeight * 1.5 + gap) + 'px';
+          }
+        }
+      }
+
+      // Allow DOM to paint before initial calculation
+      setTimeout(calculateHeights, 50);
+
+      let resizeTimer = null;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          if (isExpanded) {
+            wrapper.style.maxHeight = 'none';
+            void wrapper.offsetHeight; 
+            wrapper.style.maxHeight = wrapper.scrollHeight + 'px';
+          } else {
+            calculateHeights();
+          }
+        }, 120);
+      });
+
+      toggleBtn.addEventListener('click', function() {
+        isExpanded = !isExpanded;
+        if (isExpanded) {
+          wrapper.style.maxHeight = wrapper.scrollHeight + 'px';
+          overlay.style.opacity = '0';
+          toggleText.textContent = 'Pokaż mniej uczestników';
+          toggleBtn.querySelector('.material-symbols-outlined').textContent = 'expand_less';
+          
+          setTimeout(() => {
+            if (isExpanded) wrapper.style.maxHeight = 'none';
+          }, 700);
+        } else {
+          wrapper.style.maxHeight = wrapper.scrollHeight + 'px';
+          // Force layout reflow before continuing
+          void wrapper.offsetHeight;
+          
+          calculateHeights();
+          overlay.style.opacity = '1';
+          toggleText.textContent = 'Pokaż więcej uczestników';
+          toggleBtn.querySelector('.material-symbols-outlined').textContent = 'expand_more';
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
