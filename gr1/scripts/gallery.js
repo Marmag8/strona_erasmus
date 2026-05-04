@@ -18,13 +18,613 @@
 	const lightboxNextButton = document.getElementById("lightboxNext");
 
 	const galleryItems = [
-		{
-			src: "../public/gallery/idea.jpg",
-			alt: "Przygotowania projektowe",
-			title: "Przygotowania projektowe",
-			description: "Uczestnicy podczas warsztatów i zajęć organizacyjnych.",
-		},
-	];
+	{
+		src: '../public/gallery/students/11/lodyWRimini.jpg',
+		alt: 'Czas w Rimini',
+		title: 'Lody w Rimini',
+		description: 'Odpoczynek przy tradycyjnych włoskich lodach.'
+	},
+	{
+		src: '../public/gallery/students/15/4E na obiedzie.jpg',
+		alt: 'Wspólny posiłek',
+		title: 'Wspólny posiłek',
+		description: 'Klasa 4E integruje się podczas pysznego obiadu.'
+	},
+	{
+		src: '../public/gallery/students/15/4E w San Marino.JPG',
+		alt: 'Wizyta w San Marino',
+		title: 'Klasa 4E',
+		description: 'Uczniowie klasy 4E zwiedzający San Marino.'
+	},
+	{
+		src: '../public/gallery/students/15/czas wolny przy plazy.JPG',
+		alt: 'Czas wolny',
+		title: 'Czas przy plaży',
+		description: 'Relaks i zabawa uczestników nad brzegiem morza.'
+	},
+	{
+		src: '../public/gallery/students/15/czas wolny w rimini (2).jpg',
+		alt: 'Czas w Rimini',
+		title: 'Uliczkami Rimini',
+		description: 'Spacery ulicami Rimini podczas wolnego popołudnia.'
+	},
+	{
+		src: '../public/gallery/students/15/czas wolny w rimini.jpg',
+		alt: 'Czas w Rimini',
+		title: 'Odpoczynek w Rimini',
+		description: 'Grupa podziwia architekturę miasteczka wspólnie spędzając czas.'
+	},
+	{
+		src: '../public/gallery/students/15/czas wolny.JPG',
+		alt: 'Czas wolny',
+		title: 'Czas dla siebie',
+		description: 'Odpoczynek po pełnym wrażeń dniu w ramach programu.'
+	},
+	{
+		src: '../public/gallery/students/15/Kolacja na tle San Marino.jpg',
+		alt: 'Wieczorne widoki',
+		title: 'Wieczorna uczta',
+		description: 'Uczestnicy jedzą kolację ze wspaniałym malowniczym tłem.'
+	},
+	{
+		src: '../public/gallery/students/15/panorama w san marino.JPG',
+		alt: 'Panorama San Marino',
+		title: 'Przepiękna panorama',
+		description: 'Ujęcia pięknych krajobrazów San Marino obserwowanych podczas wycieczki.'
+	},
+	{
+		src: '../public/gallery/students/15/rzezba aparatu w rimini.jpg',
+		alt: 'Rzeźba w Rimini',
+		title: 'Artystyczne Rimini',
+		description: 'Zdjęcie przy znanej miejscowej rzeźbie w kształcie aparatu.'
+	},
+	{
+		src: '../public/gallery/students/18/czas wolny w san marino.jpg',
+		alt: 'Czas w San Marino',
+		title: 'Klimatyczne San Marino',
+		description: 'Chwila wytchnienia podczas zwiedzania republiki.'
+	},
+	{
+		src: '../public/gallery/students/18/widok w san marino.jpg',
+		alt: 'Widok na miasto',
+		title: 'Krajobrazy z góry',
+		description: 'Przecudowny widok rozciągający się z jednej z twierdz.'
+	},
+	{
+		src: '../public/gallery/students/18/wieczor w rimini.jpg',
+		alt: 'Wieczór w Rimini',
+		title: 'Rimini nocą',
+		description: 'Zwiedzanie pięknego Rimini po zachodzie słońca.'
+	},
+	{
+		src: '../public/gallery/students/24/fontanna w rimini.jpg',
+		alt: 'Miejska architektura',
+		title: 'Słynna fontanna',
+		description: 'Spotkanie uczniów pod zabytkową fontanną.'
+	},
+	{
+		src: '../public/gallery/students/24/grupa w san marino.jpg',
+		alt: 'Zdjęcie grupowe',
+		title: 'Cała ekipa',
+		description: 'Wszyscy uśmiechnięci gotowi do dalszego zwiedzania.'
+	},
+	{
+		src: '../public/gallery/students/24/kosciol w rimini.jpg',
+		alt: 'Architektura Rimini',
+		title: 'Zabytkowy kościół',
+		description: 'Stare włoskie budowle zachwycają swoimi detalami.'
+	},
+	{
+		src: '../public/gallery/students/24/kosciol w san marino.jpg',
+		alt: 'Zabytki San Marino',
+		title: 'Katedra San Marino',
+		description: 'Klasyczna architektura sakralna pośród państwowych budowli.'
+	},
+	{
+		src: '../public/gallery/students/24/lotnisko.jpg',
+		alt: 'Podróż',
+		title: 'Na lotnisku',
+		description: 'Uczestnicy u progu swojej podróży przed wylotem.'
+	},
+	{
+		src: '../public/gallery/students/24/rimini.jpg',
+		alt: 'Ujęcie miasta',
+		title: 'W centrum Rimini',
+		description: 'Zdjęcie lokalnego placyku mieniącego się w słońcu.'
+	},
+	{
+		src: '../public/gallery/students/24/rzezba.jpg',
+		alt: 'Detale i sztuka',
+		title: 'Lokalna sztuka',
+		description: 'Intrygujące dzieło rzeźbiarskie spotkane w drodze.'
+	},
+	{
+		src: '../public/gallery/students/24/samolot do rimini.jpg',
+		alt: 'Podróż lotnicza',
+		title: 'Podniebna podróż',
+		description: 'Droga w chmurach prosto na staże Erasmus+.'
+	},
+	{
+		src: '../public/gallery/students/24/san marino (2).jpg',
+		alt: 'Wizyta w San Marino',
+		title: 'Spacer brzegiem urwiska',
+		description: 'Fotografia ukazująca wzniesienia z krajobrazem miejskim.'
+	},
+	{
+		src: '../public/gallery/students/24/san marino (3).jpg',
+		alt: 'Wizyta w San Marino',
+		title: 'Mury obronne',
+		description: 'Uczestnicy zachwyceni widokami potężnych murów obronnych.'
+	},
+	{
+		src: '../public/gallery/students/24/san marino.jpg',
+		alt: 'Wizyta w San Marino',
+		title: 'Górskie miasteczko',
+		description: 'Tajemnicze i zapierające dech w piersiach klimatyczne zaułki.'
+	},
+	{
+		src: '../public/gallery/students/24/uczestnicy w san marino.jpg',
+		alt: 'Uczestnicy',
+		title: 'Razem w podróży',
+		description: 'Zdjęcie pamiątkowe grupy chłopaków uczestniczących w projekcie.'
+	},
+	{
+		src: '../public/gallery/students/24/ulice san marino.jpg',
+		alt: 'Klimatyczne ulice',
+		title: 'Wzdłuż murów',
+		description: 'Urocze dróżki przecinające starówkę malowniczą trasą.'
+	},
+	{
+		src: '../public/gallery/students/25/san marino (2).jpg',
+		alt: 'Krajobrazy',
+		title: 'Widoki i natura',
+		description: 'Zapierające dech w piersiach dachy i obiekty widziane z góry.'
+	},
+	{
+		src: '../public/gallery/students/25/san marino.jpg',
+		alt: 'Krajobrazy',
+		title: 'Odpoczynek przy starówce',
+		description: 'Moment relaksu z rozciągającym się za plecami widokiem.'
+	},
+	{
+		src: '../public/gallery/students/25/uliczka w rimini.jpg',
+		alt: 'Klimatyczne uliczki',
+		title: 'Urokliwa uliczka',
+		description: 'Ciasna, klimatyczna ulica ze wspaniałą włoską zabudową.'
+	},
+	{
+		src: '../public/gallery/students/28/muzeum felliniego.jpg',
+		alt: 'Odkrywanie kultury',
+		title: 'Muzeum Felliniego',
+		description: 'Kulturalny rozwój poprzez podziwianie sztuki kinowej.'
+	},
+	{
+		src: '../public/gallery/students/30/czas wolny.jpg',
+		alt: 'Czas na odpoczynek',
+		title: 'Ładowanie baterii',
+		description: 'Odpoczynek na promenadzie i nabieranie sił na kolejne przygody.'
+	},
+	{
+		src: '../public/gallery/students/30/san marino.jpg',
+		alt: 'Wspomnienia z San Marino',
+		title: 'Wśród chmur',
+		description: 'San Marino słynące z wzniesień wydających się leżeć w niebie.'
+	},
+	{
+		src: '../public/gallery/students/30/wieczor w rimini.jpg',
+		alt: 'Miasto nocą',
+		title: 'Nocne życie miasta',
+		description: 'Po ciężkim dniu praktyk, warto zapoznać się z miastem również nocą.'
+	},
+	{
+		src: '../public/gallery/zalucki/4e w san marino 1.JPEG',
+		alt: 'Wspomnienia grupowe',
+		title: 'Klasa 4E wycieczka',
+		description: 'Edukacyjny i intergrujący wypad reprezentantów klasy 4E.'
+	},
+	{
+		src: '../public/gallery/zalucki/4e w san marino.JPEG',
+		alt: 'Wspomnienia grupowe',
+		title: '4E na szlaku',
+		description: 'Kolejne zdjecie pamiątkowe dzielnej klasy zdobywającej San Marino.'
+	},
+	{
+		src: '../public/gallery/zalucki/4j w san marino.JPEG',
+		alt: 'Wspomnienia grupowe',
+		title: 'Silna grupa 4J',
+		description: 'Uczniowie 4J równie chętnie zwiedzali wszystkie najciekawsze zakątki.'
+	},
+	{
+		src: '../public/gallery/zalucki/chlopak na tle widokow san marino.JPEG',
+		alt: 'Uczestnik wyjazdu',
+		title: 'Pamiątka z gór',
+		description: 'Idealne miejsce na pamiątkowe profilowe ze słonecznej krainy.'
+	},
+	{
+		src: '../public/gallery/zalucki/chlopaki przy lornetce na tle zamku san marino.JPEG',
+		alt: 'Uczestnicy wyjazdu',
+		title: 'Punkt widokowy',
+		description: 'Podziwianie rozległej panoramy używając miejskich lornet.'
+	},
+	{
+		src: '../public/gallery/zalucki/chlopaki w san marino 1.JPEG',
+		alt: 'Uczestnicy w San Marino',
+		title: 'Wycieczki piesze',
+		description: 'Wiele kilometrów pieszo to doskonały sposób na dobre zwiedzanie.'
+	},
+	{
+		src: '../public/gallery/zalucki/chlopaki w san marino 10.JPEG',
+		alt: 'Uczestnicy w San Marino',
+		title: 'Wzdłuż murów obronnych',
+		description: 'San Marino robi wrażenie ufortyfikowaniami sięgającymi historii wojen.'
+	},
+	{
+		src: '../public/gallery/zalucki/chlopaki w san marino 11.JPEG',
+		alt: 'Uczestnicy w San Marino',
+		title: 'Schodami w górę',
+		description: 'Pamiątkowe foto przy pokonywaniu niezliczonych schodków państwa.'
+	},
+	{
+		src: '../public/gallery/zalucki/chlopaki w san marino 12.JPEG',
+		alt: 'Uczestnicy w San Marino',
+		title: 'Odpoczynek u szczytu',
+		description: 'Po intensywnym wejściu wszystkim należał się głębszy oddech.'
+	},
+	{
+		src: '../public/gallery/zalucki/chlopaki w san marino 2.JPEG',
+		alt: 'Uczestnicy w San Marino',
+		title: 'Zabudowa z bliska',
+		description: 'Charakterystyczne jasne mury starych zabudowań zapierają dech.'
+	},
+	{
+		src: '../public/gallery/zalucki/chlopaki w san marino 3.JPEG',
+		alt: 'Uczestnicy w San Marino',
+		title: 'Grupa we włoskiej scenerii',
+		description: 'Nikt nie narzekał na wspaniałe klimaty towarzyszące wyjazdowi.'
+	},
+	{
+		src: '../public/gallery/zalucki/chlopaki w san marino 4.JPEG',
+		alt: 'Uczestnicy w San Marino',
+		title: 'Zamek od środka',
+		description: 'Młodzież poznaje historyczne artefakty i zbrojownie miasta.'
+	},
+	{
+		src: '../public/gallery/zalucki/chlopaki w san marino 5.JPEG',
+		alt: 'Uczestnicy w San Marino',
+		title: 'Patrząc w dal',
+		description: 'Z tak wysokiego pasma górskiego widoki sięgają za horyzont.'
+	},
+	{
+		src: '../public/gallery/zalucki/chlopaki w san marino 7.JPEG',
+		alt: 'Uczestnicy w San Marino',
+		title: 'Pośród pomników',
+		description: 'Odnajdywanie skrytych w uliczkach pomników i fontann.'
+	},
+	{
+		src: '../public/gallery/zalucki/chlopaki w san marino 8.JPEG',
+		alt: 'Uczestnicy w San Marino',
+		title: 'Niezapomniane przeżycia',
+		description: 'Taki wyjazd buduje wspomnienia oraz długotrwałe przyjaźnie na lata.'
+	},
+	{
+		src: '../public/gallery/zalucki/chlopaki w san marino 9.JPEG',
+		alt: 'Uczestnicy w San Marino',
+		title: 'Szukając pamiątek',
+		description: 'Mnóstwo uroczych sklepików było stałym punktem na trasach wędrówek.'
+	},
+	{
+		src: '../public/gallery/zalucki/chlopaki w san marino.JPEG',
+		alt: 'Uczestnicy w San Marino',
+		title: 'Pozdrowienia z San Marino',
+		description: 'Najważniejsze to dobre humory, które nikogo nie opuszczały.'
+	},
+	{
+		src: '../public/gallery/zalucki/chlopaki zainterewowane tabliczka.JPEG',
+		alt: 'Podczas wycieczki',
+		title: 'Stare inskrypcje',
+		description: 'Zaciekawienie historią ukrytą na miejskich pamiątkowych tablicach.'
+	},
+	{
+		src: '../public/gallery/zalucki/ciezka praca staz zawodowy.JPEG',
+		alt: 'Praktyki',
+		title: 'Wytężona praca',
+		description: 'Uczestnicy skupieni nad realnymi projektami w ramach stażu.'
+	},
+	{
+		src: '../public/gallery/zalucki/grupka osob na tle san marino.JPEG',
+		alt: 'Widoki i ludzie',
+		title: 'Piękne tło na foto',
+		description: 'Rozciągające się z tyłu krajobrazy są wymarzonym miejscem na zdjęcia.'
+	},
+	{
+		src: '../public/gallery/zalucki/grupowe zdjecie pizza san marino.JPEG',
+		alt: 'Wspólny posiłek',
+		title: 'Włoska pizza',
+		description: 'Po całym dniu nie ma nic lepszego niż włoska, oryginalna pizza z pieca.'
+	},
+	{
+		src: '../public/gallery/zalucki/grupowe zdjecie san marino.JPEG',
+		alt: 'Uczestnicy w San Marino',
+		title: 'Foto na tle budowli',
+		description: 'Wielkie wzniesienia obfitują w takie grupowe, urocze zakątki.'
+	},
+	{
+		src: '../public/gallery/zalucki/powitanie uczniow.JPEG',
+		alt: 'Wydarzenie',
+		title: 'Powitanie uczestników',
+		description: 'Moment inauguracji i serdecznego powitania w nowym środowisku zawodowym.'
+	},
+	{
+		src: '../public/gallery/zalucki/praktyki zawodowe.JPEG',
+		alt: 'Praktyki',
+		title: 'Czas na kompetencje',
+		description: 'Uczestnictwo w projekcie to wielki rozwój umiejętności zawodowych i językowych.'
+	},
+	{
+		src: '../public/gallery/zalucki/prezentacja o rimini 1.JPEG',
+		alt: 'Zajęcia',
+		title: 'Prezentacja kulturowa',
+		description: 'Przygotowanie merytoryczne to ważna część - tutaj o Rimini.'
+	},
+	{
+		src: '../public/gallery/zalucki/prezentacja o rimini.JPEG',
+		alt: 'Zajęcia',
+		title: 'Poznajemy Rimini',
+		description: 'Referaty o zabytkach wprowadzają w wspaniały klimat włoskich miast.'
+	},
+	{
+		src: '../public/gallery/zalucki/prezentacja o san marino 1.JPEG',
+		alt: 'Zajęcia',
+		title: 'Prezentacja o San Marino',
+		description: 'Uczniowie przybliżają niezwykle ciekawą historię mikropaństwa.'
+	},
+	{
+		src: '../public/gallery/zalucki/prezentacja o san marino.JPEG',
+		alt: 'Zajęcia',
+		title: 'Poznajemy San Marino',
+		description: 'Zaczerpnięcie wiedzy przed wyruszeniem na własną misję odkrywczą.'
+	},
+	{
+		src: '../public/gallery/zalucki/sdjecie gruopowe przed zamkiem.JPEG',
+		alt: 'Zdjęcie pamiątkowe',
+		title: 'Zwycięzcy u bram',
+		description: 'Najważniejsze bramy i zameczki zostały pomyślnie i radośnie zwiedzone.'
+	},
+	{
+		src: '../public/gallery/zalucki/statua san marino.JPEG',
+		alt: 'Zabytki',
+		title: 'Kultowe rzeźby',
+		description: 'Jedna z licznie rozmieszczonych po całym państwie-mieście historycznych figur.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy 1.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Zagłębieni w kodzie',
+		description: 'Uczniowie rozwijający swoje branżowe projekty i kompetencje w IT.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy 2.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Praca przy stanowiskach',
+		description: 'Każdy miał przydzielone miejsce pracy aby dogodnie realizować cele zadania.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy 3.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Spotkania mentorskie',
+		description: 'Omówieni z mentorami postępów na stażach zawodowych realizowanych dla firm.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Budowa doświadczenia',
+		description: 'Praktyki odbywające się we Włoszech to idealna szansa dla młodych adeptów technologii.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy1.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Czas na wnioski',
+		description: 'Programiści dyskutujący nad optymalnymi i wydajnymi rozwiązaniami na swoich projektach.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy10.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Analiza usterek',
+		description: 'Codzienne zmagania z typowymi studenckimi usterkami w pisanych algorytmach.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy11.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Nauka sprzętu',
+		description: 'Studenci nie bali się odkrywać zupełnie nowej, lokalnej aparatury czy sieci.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy12.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Wykłady i prelekcje',
+		description: 'Ważną cegiełkę dołożyły wspaniałe przygotowania teoretyczne odbywane w salach.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy13.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Burze mózgów',
+		description: 'Twórcze debaty pozwoliły zrealizować wielkie idee na płaszczyźnie stażowej.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy14.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Prezentacje pomysłów',
+		description: 'Każdy uczeń musiał zaprezentować dotychczas zaplanowane etapy zlecenia.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy15.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Zaliczenia praktyczne',
+		description: 'Szybkie zapoznanie się z wymogami projektowymi na zewnątrz firmy na żywo.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy16.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Praktyczny egzamin',
+		description: 'Nikt nie narzekał na rutynę, zadania i wyzwania stale przyciągały do pracy.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy17.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Zdobyte certyfikaty',
+		description: 'Po ciężkiej pracy na stażach wszyscy nabyli niezwykłych referencji i zaświadczeń.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy18.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Współpraca międzynarodowa',
+		description: 'Angielski to podstawa i każdy doskonale opanował obcowanie z kadrą po angielsku.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy2.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Testowanie sprzętu',
+		description: 'Ciekawe laboratoria posługujące się innowacyjnymi środkami informatycznymi.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy3.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Przy komputerze',
+		description: 'Domyślna postawa informatyka podczas prób pisania perfekcyjnego modułu.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy4.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Dobre wsparcie',
+		description: 'Pewne zaplecze opieki z wykwalifikowaną załogą firmy szkolącej.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy5.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Zdane testy',
+		description: 'Wysilając umysły młodzież udowodniła, że potrafi się błyskawicznie przystosowywać do zmian.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy6.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Pomoc dydaktyczna',
+		description: 'Zajęcia grupowe bardzo przydawały się zwłaszcza w przełamywaniu pierwszych lodów na warsztacie.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy7.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Sukcesy techniczne',
+		description: 'Z uśmiechem na twarzy można celebrować zamknięcie kluczowego sprinta zlecenia.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy8.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Staż IT na froncie',
+		description: 'Włoskie powietrze zdecydowanie sprzyjało innowacjom i kreatywności w kodowaniu.'
+	},
+	{
+		src: '../public/gallery/zalucki/staz zawodowy9.JPEG',
+		alt: 'Zadania w pracy',
+		title: 'Certyfikacja i sukces',
+		description: 'Zdobyte doświadczenie i wpis do CV, to wspaniały start dla każdego ucznia technikum!'
+	},
+	{
+		src: '../public/gallery/zalucki/widok zamek san marino.JPEG',
+		alt: 'Krajobrazy',
+		title: 'Zamek górujący nad miastem',
+		description: 'Niesamowitą panoramę miasta wieńczył wielki stary zamek, dostępny dla darmowych zwiedzań.'
+	},
+	{
+		src: '../public/gallery/zalucki/widoki san marino 1.JPEG',
+		alt: 'Krajobrazy',
+		title: 'Widok na dolinę',
+		description: 'Gęste zalesienie kontrastujące ze skalnymi wzgórzami robi spore wrażenie.'
+	},
+	{
+		src: '../public/gallery/zalucki/widoki san marino 2.JPEG',
+		alt: 'Krajobrazy',
+		title: 'Dachy miasta',
+		description: 'Włoski styl dachwek z wypalanej gliny od razu buduje wspaniały południowy klimat.'
+	},
+	{
+		src: '../public/gallery/zalucki/widoki san marino 3.JPEG',
+		alt: 'Krajobrazy',
+		title: 'Skale wzgórza',
+		description: 'Kaskadowo ułożone miasto to wspaniała perspektywa turystyczna z każdej strony.'
+	},
+	{
+		src: '../public/gallery/zalucki/widoki san marino 4.JPEG',
+		alt: 'Krajobrazy',
+		title: 'Punkt najwyższy',
+		description: 'Docierając na szczyt można w ułamek sekundy poczuć, że było warto.'
+	},
+	{
+		src: '../public/gallery/zalucki/widoki san marino 5.JPEG',
+		alt: 'Krajobrazy',
+		title: 'Morze dachów',
+		description: 'Patrząc w dół widać niekończące się ilości zabudowań cywilnych republiki.'
+	},
+	{
+		src: '../public/gallery/zalucki/widoki san marino 6.JPEG',
+		alt: 'Krajobrazy',
+		title: 'Architektura natury',
+		description: 'Po prostu wspaniały krajobraz, który trudno wyrazić samymi słowami na stronie.'
+	},
+	{
+		src: '../public/gallery/zalucki/widoki san marino.JPEG',
+		alt: 'Krajobrazy',
+		title: 'Krajobrazy pełne magii',
+		description: 'Podsumowując zjawiskowe ujęcia - był to w całości bardzo obfity kulturowo punkt wycieczek.'
+	},
+	{
+		src: '../public/gallery/zalucki/zdjecie groupowe kosciol.JPEG',
+		alt: 'Zdjęcie grupowe',
+		title: 'Zdjęcie przy kościele',
+		description: 'Pamiątkowa fotografia tuż z wejścia do wiekowej ogromnej, przepięknej bazyliki miejskiej.'
+	},
+	{
+		src: '../public/gallery/zalucki/zdjecie groupowe most.JPEG',
+		alt: 'Zdjęcie grupowe',
+		title: 'Pamiątka z mostu',
+		description: 'Stare mosty to idealne punkty dla malowniczych zdjęć klasowych grupy turystów.'
+	},
+	{
+		src: '../public/gallery/zalucki/zdjecie grupowe lodki.JPEG',
+		alt: 'Wycieczka',
+		title: 'W porcie',
+		description: 'Przy wycieczce nad wodę udało się także podziwiać przystanie usłane wieloma, cennymi łodziami.'
+	},
+	{
+		src: '../public/gallery/zalucki/zdjecie grupowe napis rimini.JPEG',
+		alt: 'W Rimini',
+		title: 'Znak Rimini',
+		description: 'Tego napisu nie dało się pominąć - zdjęcie pod tablicą \'Rimini\' to wręcz studencki obowiązek!'
+	},
+	{
+		src: '../public/gallery/zalucki/zdjecie grupowe san marino 1.JPEG',
+		alt: 'Wspomnienia grupowe',
+		title: 'San Marino razem',
+		description: 'Duża reprezentacja uczniów radośnie zdobywającej najtrudniej dostępne widokowe pułki San Marino.'
+	},
+	{
+		src: '../public/gallery/zalucki/zdjecie grupowe san marino 2.JPEG',
+		alt: 'Wspomnienia grupowe',
+		title: 'Schodek po schodku',
+		description: 'Tłum na schodach potwierdza jedność i świetne relacje rówieśnicze w czasie przerw edukacyjnych.'
+	},
+	{
+		src: '../public/gallery/zalucki/zdjecie grupowe san marino 3.JPEG',
+		alt: 'Wspomnienia grupowe',
+		title: 'Cała delegacja',
+		description: 'Nikt nie pozostał w tyle. Wszyscy bardzo szczęśliwie uczestniczyli w atrakcyjnych podróżach grupowych ze szkoły.'
+	},
+	{
+		src: '../public/gallery/zalucki/zdjecie grupowe san marino.JPEG',
+		alt: 'Wspomnienia grupowe',
+		title: 'Wygrani zdobywcy wycieczek',
+		description: 'Na samym końcu każdy wiedział, jak wielkim zaszczytem i wspaniałą przygodą okazał się wyjazd zagraniczny!'
+	}
+];
 
 	const perPage = 12;
 	const totalPages = Math.ceil(galleryItems.length / perPage);
