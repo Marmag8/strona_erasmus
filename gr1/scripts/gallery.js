@@ -63,8 +63,8 @@
 	{
 		src: '../public/gallery/students/15/Kolacja na tle San Marino.jpg',
 		alt: 'Wieczorne widoki',
-		title: 'Wieczorna uczta',
-		description: 'Uczestnicy jedzą kolację ze wspaniałym malowniczym tłem.'
+		title: 'Posiłek w San Marino',
+		description: 'Uczestnicy jedzą ze wspaniałym malowniczym tłem.'
 	},
 	{
 		src: '../public/gallery/students/15/panorama w san marino.JPG',
