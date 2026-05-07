@@ -1277,6 +1277,114 @@
 		alt: 'Morskie Wybrzeże',
 		title: 'Morskie Wybrzeże',
 		description: 'Malowniczy krajobraz morskiego wybrzeża przy promieniach słonecznych.'
+	},
+		{
+		src: '../public/gallery/wenecja/IMG_0465.webp',
+		alt: 'Wenecja',
+		title: 'Wenecja',
+		description: 'Spokojny moment na zwiedzanie i zbieranie wspomnień w ulubionym tempie.'
+	},
+	{
+		src: '../public/gallery/wenecja/IMG_0471.webp',
+		alt: 'Wenecja',
+		title: 'Spacer po Wenecji',
+		description: 'Między krótkimi przystankami znalazła się chwila na relaks i uśmiech.'
+	},
+	{
+		src: '../public/gallery/wenecja/IMG_0478.webp',
+		alt: 'Wenecja',
+		title: 'Spacer po Wenecji',
+		description: 'To jeden z tych kadrów, które świetnie pasują do opowieści o dobrym dniu.'
+	},
+	{
+		src: '../public/gallery/wenecja/IMG_7374.webp',
+		alt: 'Wenecja',
+		title: 'Spacer po Wenecji',
+		description: 'Mimo nieidealnej pogody nikt się nie spieszył.'
+	},
+	{
+		src: '../public/gallery/wenecja/IMG_7375.webp',
+		alt: 'Wenecja',
+		title: 'Spacer po Wenecji',
+		description: 'Krótka przerwa na złapanie oddechu i kolejne wspólne zdjęcie.'
+	},
+	{
+		src: '../public/gallery/wenecja/IMG_7380.webp',
+		alt: 'Wenecja',
+		title: 'Spacer po Wenecji',
+		description: 'Wenecja jak zwykle potrafi zaskoczyć, nawet gdy pogoda bywa kapryśna.'
+	},
+	{
+		src: '../public/gallery/wenecja/IMG_7381.webp',
+		alt: 'Wenecja',
+		title: 'Spacer po Wenecji',
+		description: 'Zatrzymany moment, który idealnie podsumowuje spokojny rytm wycieczki.'
+	},
+	{
+		src: '../public/gallery/wenecja/IMG_7384.webp',
+		alt: 'Wenecja',
+		title: 'Spacer po Wenecji',
+		description: 'Takie ujęcia zostają na długo, bo przypominają o dobrze spędzonym czasie.'
+	},
+	{
+		src: '../public/gallery/wenecja/IMG_7388.webp',
+		alt: 'Wenecja',
+		title: 'Spacer po Wenecji',
+		description: 'Spacerowym krokiem i z humorem, nawet jeśli wiatr lekko przypomina o sobie.'
+	},
+	{
+		src: '../public/gallery/wenecja/IMG_7390.webp',
+		alt: 'Wenecja',
+		title: 'Spacer po Wenecji',
+		description: 'Krótki postój na zdjęcie i kolejną porcję wrażeń z wyjazdu.'
+	},
+	{
+		src: '../public/gallery/wenecja/IMG_7391.webp',
+		alt: 'Wenecja',
+		title: 'Spacer po Wenecji',
+		description: 'Dobre towarzystwo to najlepszy przepis na udany dzień w podróży.'
+	},
+	{
+		src: '../public/gallery/wenecja/IMG_7393.webp',
+		alt: 'Wenecja',
+		title: 'Spacer po Wenecji',
+		description: 'Ujęcie, które pasuje do każdej opowieści o wakacyjnym odpoczynku.'
+	},
+	{
+		src: '../public/gallery/wenecja/IMG_7395.webp',
+		alt: 'Wenecja',
+		title: 'Spacer po Wenecji',
+		description: 'Wenecja robi klimat, a reszta to już tylko dobre nastroje.'
+	},
+	{
+		src: '../public/gallery/wenecja/IMG_7397.webp',
+		alt: 'Wenecja',
+		title: 'Spacer po Wenecji',
+		description: 'Lekki żart, szybkie zdjęcie i kolejny punkt na trasie.'
+	},
+	{
+		src: '../public/gallery/wenecja/IMG_7398.webp',
+		alt: 'Wenecja',
+		title: 'Spacer po Wenecji',
+		description: 'Kilka minut relaksu i wracamy do zwiedzania z nową energią.'
+	},
+	{
+		src: '../public/gallery/wenecja/IMG_7405.webp',
+		alt: 'Wenecja',
+		title: 'Spacer po Wenecji',
+		description: 'Miasto płynie własnym rytmem, a my chętnie się do niego dostosowaliśmy.'
+	},
+	{
+		src: '../public/gallery/wenecja/IMG_7406.webp',
+		alt: 'Wenecja',
+		title: 'Spacer po Wenecji',
+		description: 'Przystanek na oddech, zdjęcie i ulubione wspomnienia z wyjazdu.'
+	},
+	{
+		src: '../public/gallery/wenecja/IMG_7407.webp',
+		alt: 'Wenecja',
+		title: 'Spacer po Wenecji',
+		description: 'Nawet przy mniej idealnej pogodzie dało się świetnie spędzić czas.'
 	}
 ];
 
