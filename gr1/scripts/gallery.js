@@ -121,12 +121,6 @@
 		description: 'Klasyczna architektura sakralna pośród państwowych budowli.'
 	},
 	{
-		src: '../public/gallery/students-27-29/lotnisko.jpg',
-		alt: 'Podróż',
-		title: 'Na lotnisku',
-		description: 'Uczestnicy u progu swojej podróży przed wylotem.'
-	},
-	{
 		src: '../public/gallery/students-27-29/rimini.jpg',
 		alt: 'Ujęcie miasta',
 		title: 'W centrum Rimini',
@@ -181,12 +175,6 @@
 		description: 'Zapierające dech w piersiach dachy i obiekty widziane z góry.'
 	},
 	{
-		src: '../public/gallery/students-27-29/san marino.jpg',
-		alt: 'Krajobrazy',
-		title: 'Odpoczynek przy starówce',
-		description: 'Moment relaksu z rozciągającym się za plecami widokiem.'
-	},
-	{
 		src: '../public/gallery/students-27-29/uliczka w rimini.jpg',
 		alt: 'Klimatyczne uliczki',
 		title: 'Urokliwa uliczka',
@@ -203,12 +191,6 @@
 		alt: 'Czas na odpoczynek',
 		title: 'Ładowanie baterii',
 		description: 'Odpoczynek na promenadzie i nabieranie sił na kolejne przygody.'
-	},
-	{
-		src: '../public/gallery/students-27-29/san marino.jpg',
-		alt: 'Wspomnienia z San Marino',
-		title: 'Wśród chmur',
-		description: 'San Marino słynące z wzniesień wydających się leżeć w niebie.'
 	},
 	{
 		src: '../public/gallery/students-27-29/wieczor w rimini.jpg',
@@ -361,22 +343,10 @@
 		description: 'Uczestnictwo w projekcie to wielki rozwój umiejętności zawodowych i językowych.'
 	},
 	{
-		src: '../public/gallery/zalucki-27-29/prezentacja o rimini 1.JPEG',
-		alt: 'Zajęcia',
-		title: 'Prezentacja kulturowa',
-		description: 'Przygotowanie merytoryczne to ważna część - tutaj o Rimini.'
-	},
-	{
 		src: '../public/gallery/zalucki-27-29/prezentacja o rimini.JPEG',
 		alt: 'Zajęcia',
 		title: 'Poznajemy Rimini',
 		description: 'Referaty o zabytkach wprowadzają w wspaniały klimat włoskich miast.'
-	},
-	{
-		src: '../public/gallery/zalucki-27-29/prezentacja o san marino 1.JPEG',
-		alt: 'Zajęcia',
-		title: 'Prezentacja o San Marino',
-		description: 'Uczniowie przybliżają niezwykle ciekawą historię mikropaństwa.'
 	},
 	{
 		src: '../public/gallery/zalucki-27-29/prezentacja o san marino.JPEG',
@@ -563,12 +533,6 @@
 		alt: 'Krajobrazy',
 		title: 'Morze dachów',
 		description: 'Patrząc w dół widać niekończące się ilości zabudowań cywilnych republiki.'
-	},
-	{
-		src: '../public/gallery/zalucki-27-29/widoki san marino 6.JPEG',
-		alt: 'Krajobrazy',
-		title: 'Architektura natury',
-		description: 'Po prostu wspaniały krajobraz, który trudno wyrazić samymi słowami na stronie.'
 	},
 	{
 		src: '../public/gallery/zalucki-27-29/widoki san marino.JPEG',
@@ -883,12 +847,6 @@
 		description: 'Czas spędzony na wyjeździe obfitował w liczne atrakcje turystyczne i edukacyjne.'
 	},
 	{
-		src: '../public/gallery/zalucki-30-03/chlopaki na obiedzie (7).JPEG',
-		alt: 'Chlopaki na obiedzie',
-		title: 'Chlopaki na obiedzie',
-		description: 'Odkrywanie wspaniałych włoskich zakątków i chłonięcie tutejszej żywej kultury.'
-	},
-	{
 		src: '../public/gallery/zalucki-30-03/chlopaki w muzeum felliniego (1).JPEG',
 		alt: 'Muzeum Felliniego',
 		title: 'Muzeum Felliniego',
@@ -1015,12 +973,6 @@
 		description: 'Doskonałe nastroje podczas relaksu w urokliwym Parku Miniatur.'
 	},
 	{
-		src: '../public/gallery/zalucki-30-03/chlopaki w parku miniatur (2).JPEG',
-		alt: 'Park Miniatur',
-		title: 'Park Miniatur',
-		description: 'Zabawa i edukacja w Parku Miniatur to idealny sposób na popołudnie.'
-	},
-	{
 		src: '../public/gallery/zalucki-30-03/chlopaki w trasie.JPEG',
 		alt: 'Chlopaki w trasie',
 		title: 'Chlopaki w trasie',
@@ -1031,12 +983,6 @@
 		alt: 'Park Miniatur',
 		title: 'Park Miniatur',
 		description: 'Ciekawe popołudnie spędzone na zwiedzaniu miniatur.'
-	},
-	{
-		src: '../public/gallery/zalucki-30-03/kolejka wodna w parku miniatur (1).JPEG',
-		alt: 'Park Miniatur',
-		title: 'Park Miniatur',
-		description: 'Najsłynniejsze włoskie i europejskie zabytki w skali mikro.'
 	},
 	{
 		src: '../public/gallery/zalucki-30-03/kolejka wodna w parku miniatur (2).JPEG',
