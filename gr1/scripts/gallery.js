@@ -283,12 +283,6 @@
 		description: 'Odnajdywanie skrytych w uliczkach pomników i fontann.'
 	},
 	{
-		src: '../public/gallery/zalucki-27-29/chlopaki w san marino 8.webp',
-		alt: 'Uczestnicy w San Marino',
-		title: 'Niezapomniane przeżycia',
-		description: 'Taki wyjazd buduje wspomnienia oraz długotrwałe przyjaźnie na lata.'
-	},
-	{
 		src: '../public/gallery/zalucki-27-29/chlopaki w san marino 9.webp',
 		alt: 'Uczestnicy w San Marino',
 		title: 'Szukając pamiątek',
@@ -311,12 +305,6 @@
 		alt: 'Praktyki',
 		title: 'Wytężona praca',
 		description: 'Uczestnicy skupieni nad realnymi projektami w ramach stażu.'
-	},
-	{
-		src: '../public/gallery/zalucki-27-29/grupka osob na tle san marino.webp',
-		alt: 'Widoki i ludzie',
-		title: 'Piękne tło na foto',
-		description: 'Rozciągające się z tyłu krajobrazy są wymarzonym miejscem na zdjęcia.'
 	},
 	{
 		src: '../public/gallery/zalucki-27-29/grupowe zdjecie pizza san marino.webp',
