@@ -493,12 +493,6 @@
 		description: 'Niesamowitą panoramę miasta wieńczył wielki stary zamek, dostępny dla darmowych zwiedzań.'
 	},
 	{
-		src: '../public/gallery/zalucki-27-29/widoki san marino 1.webp',
-		alt: 'Krajobrazy',
-		title: 'Widok na dolinę',
-		description: 'Gęste zalesienie kontrastujące ze skalnymi wzgórzami robi spore wrażenie.'
-	},
-	{
 		src: '../public/gallery/zalucki-27-29/widoki san marino 2.webp',
 		alt: 'Krajobrazy',
 		title: 'Dachy miasta',
@@ -521,12 +515,6 @@
 		alt: 'Krajobrazy',
 		title: 'Morze dachów',
 		description: 'Patrząc w dół widać niekończące się ilości zabudowań cywilnych republiki.'
-	},
-	{
-		src: '../public/gallery/zalucki-27-29/widoki san marino.webp',
-		alt: 'Krajobrazy',
-		title: 'Krajobrazy pełne magii',
-		description: 'Podsumowując zjawiskowe ujęcia - był to w całości bardzo obfity kulturowo punkt wycieczek.'
 	},
 	{
 		src: '../public/gallery/zalucki-27-29/zdjecie groupowe kosciol.webp',
@@ -787,12 +775,6 @@
 		description: 'Najsłynniejsze włoskie i europejskie zabytki w skali mikro.'
 	},
 	{
-		src: '../public/gallery/zalucki-30-03/chlopaki na gelato (1).webp',
-		alt: 'Włoskie Gelato',
-		title: 'Włoskie Gelato',
-		description: 'Prawdziwe lody to świetny ratunek podczas ciepłego dnia.'
-	},
-	{
 		src: '../public/gallery/zalucki-30-03/chlopaki na gelato (2).webp',
 		alt: 'Włoskie Gelato',
 		title: 'Włoskie Gelato',
@@ -1033,18 +1015,6 @@
 		description: 'Zabawa i edukacja w Parku Miniatur to idealny sposób na popołudnie.'
 	},
 	{
-		src: '../public/gallery/zalucki-30-03/park miniatur (14).webp',
-		alt: 'Park Miniatur',
-		title: 'Park Miniatur',
-		description: 'Ciekawe popołudnie spędzone na zwiedzaniu miniatur.'
-	},
-	{
-		src: '../public/gallery/zalucki-30-03/park miniatur (15).webp',
-		alt: 'Park Miniatur',
-		title: 'Park Miniatur',
-		description: 'Doskonałe nastroje podczas relaksu w urokliwym Parku Miniatur.'
-	},
-	{
 		src: '../public/gallery/zalucki-30-03/park miniatur (16).webp',
 		alt: 'Park Miniatur',
 		title: 'Park Miniatur',
@@ -1061,12 +1031,6 @@
 		alt: 'Park Miniatur',
 		title: 'Park Miniatur',
 		description: 'Ciekawe popołudnie spędzone na zwiedzaniu miniatur.'
-	},
-	{
-		src: '../public/gallery/zalucki-30-03/park miniatur (19).webp',
-		alt: 'Park Miniatur',
-		title: 'Park Miniatur',
-		description: 'Zabawa i edukacja w Parku Miniatur to idealny sposób na popołudnie.'
 	},
 	{
 		src: '../public/gallery/zalucki-30-03/park miniatur (2).webp',
@@ -1232,12 +1196,6 @@
 	},
 	{
 		src: '../public/gallery/zalucki-30-03/szkolenie zawodowe - drukarka 3D (1).webp',
-		alt: 'Technologie 3D',
-		title: 'Technologie 3D',
-		description: 'Zajęcia z druku 3D to wkraczanie w innowacyjne, nowoczesne technologie.'
-	},
-	{
-		src: '../public/gallery/zalucki-30-03/szkolenie zawodowe - drukarka 3D (2).webp',
 		alt: 'Technologie 3D',
 		title: 'Technologie 3D',
 		description: 'Zajęcia z druku 3D to wkraczanie w innowacyjne, nowoczesne technologie.'
