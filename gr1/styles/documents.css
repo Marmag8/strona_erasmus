@@ -12,11 +12,10 @@ body {
       font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     }
 
-    .nav-links {
-          display: flex;
+        .nav-links {
           align-items: center;
           gap: 1.25rem;
-    }
+        }
 
         .social-links {
           display: flex;

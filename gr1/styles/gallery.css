@@ -23,11 +23,10 @@
       grid-row: span 2;
     }
 
-    .nav-links {
-          display: flex;
+        .nav-links {
           align-items: center;
           gap: 1.25rem;
-    }
+        }
 
         .social-links {
           display: flex;
