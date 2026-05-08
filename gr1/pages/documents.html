@@ -7,7 +7,6 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Dokumenty - Erasmus+ Rimini 2026</title>
   <link rel="icon" type="image/x-icon" href="../public/elektronik_wlochy.png">
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
     rel="stylesheet" />
@@ -15,6 +14,7 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="../styles/documents.css" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
@@ -86,11 +86,11 @@
     class="fixed top-0 w-full z-50 rounded-b-2xl bg-white/70 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,59,114,0.06)]">
     <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
       <div class="text-xl font-extrabold tracking-tighter plus-jakarta-sans">
-        <a class="inline-flex items-center gap-3 text-blue-900" href="main.html" aria-label="Strona glowna">
-          <span class="inline-flex items-center gap-2">
-            <img class="h-12 w-auto" src="../public/elektronik_wlochy.png" alt="Logo Elektronik Wlochy" />
+        <a class="inline-flex items-center gap-3 text-blue-900 min-w-0" href="main.html" aria-label="Strona glowna">
+          <span class="inline-flex items-center gap-2 shrink-0">
+            <img class="h-10 sm:h-12 w-auto shrink-0" src="../public/elektronik_wlochy.png" alt="Logo Elektronik Wlochy" />
           </span>
-          <span>Erasmus+ 2026: Rimini</span>
+          <span class="block text-sm sm:text-base md:text-lg leading-tight max-w-[9.5rem] sm:max-w-none truncate">Erasmus+ 2026: Rimini</span>
         </a>
       </div>
       <button
@@ -245,7 +245,7 @@
           Dofinansowano ze środków Unii Europejskiej.
         </p>
       </div>
-      <div class="flex flex-nowrap items-center justify-start gap-4 md:justify-center w-full">
+      <div class="flex flex-wrap items-center justify-start gap-4 md:justify-center w-full">
         <img class="h-12 md:h-16 lg:h-20 w-auto object-contain" src="../public/elektronik.png" alt="Logo Elektronika"/>
         <img class="h-12 md:h-16 lg:h-20 w-auto object-contain" src="../public/ai-rimini-logo.png" alt="Logo airimini"/>
         <img class="h-12 md:h-16 lg:h-20 w-auto object-contain" src="../public/wspolfinansowanePrzezUnie.png" alt="Współfinansowane przez Unię Europejską"/>
