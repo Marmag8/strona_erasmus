@@ -1331,6 +1331,420 @@
 		alt: 'Wenecja',
 		title: 'Spacer po Wenecji',
 		description: 'Nawet przy mniej idealnej pogodzie dało się świetnie spędzić czas.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/dokanczanie projektow (1).webp',
+		alt: 'Dokanczanie projektow',
+		title: 'Dokanczanie projektow',
+		description: 'Uśmiechy na twarzach mówią wszystko o zadowoleniu ze wspólnego wyjazdu.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/dokanczanie projektow (2).webp',
+		alt: 'Dokanczanie projektow',
+		title: 'Dokanczanie projektow',
+		description: 'Kolejne piękne ujęcie z niezapomnianego programu Erasmus+.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/dokanczanie projektow (3).webp',
+		alt: 'Dokanczanie projektow',
+		title: 'Dokanczanie projektow',
+		description: 'Odkrywanie wspaniałych włoskich zakątków i chłonięcie tutejszej żywej kultury.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/dokanczanie projektow (4).webp',
+		alt: 'Dokanczanie projektow',
+		title: 'Dokanczanie projektow',
+		description: 'Czas spędzony na wyjeździe obfitował w liczne atrakcje turystyczne i edukacyjne.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/dokanczanie projektow (5).webp',
+		alt: 'Dokanczanie projektow',
+		title: 'Dokanczanie projektow',
+		description: 'Odkrywanie wspaniałych włoskich zakątków i chłonięcie tutejszej żywej kultury.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/dokanczanie projektow (6).webp',
+		alt: 'Dokanczanie projektow',
+		title: 'Dokanczanie projektow',
+		description: 'Czas spędzony na wyjeździe obfitował w liczne atrakcje turystyczne i edukacyjne.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (1).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (10).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (11).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (12).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (13).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (14).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (15).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (16).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (17).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (18).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (19).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (2).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (20).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (21).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (22).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (23).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (24).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (3).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (4).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (5).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (6).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (7).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (8).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/prezentacja robotow (9).webp',
+		alt: 'Czas Prezentacji',
+		title: 'Czas Prezentacji',
+		description: 'Omawianie zdobytej wiedzy z wykorzystaniem starannie przygotowanej prezentacji.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/rozdanie certyfikatow (1).webp',
+		alt: 'Rozdanie certyfikatow',
+		title: 'Rozdanie certyfikatow',
+		description: 'Kolejne piękne ujęcie z niezapomnianego programu Erasmus+.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/rozdanie certyfikatow (2).webp',
+		alt: 'Rozdanie certyfikatow',
+		title: 'Rozdanie certyfikatow',
+		description: 'Dobry humor i wspaniała pogoda nie opuszczały uczestników ani na moment.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/rozdanie certyfikatow (3).webp',
+		alt: 'Rozdanie certyfikatow',
+		title: 'Rozdanie certyfikatow',
+		description: 'Kolejne piękne ujęcie z niezapomnianego programu Erasmus+.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/rozdanie certyfikatow (4).webp',
+		alt: 'Rozdanie certyfikatow',
+		title: 'Rozdanie certyfikatow',
+		description: 'Dobry humor i wspaniała pogoda nie opuszczały uczestników ani na moment.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/rozdanie certyfikatow (5).webp',
+		alt: 'Rozdanie certyfikatow',
+		title: 'Rozdanie certyfikatow',
+		description: 'Czas spędzony na wyjeździe obfitował w liczne atrakcje turystyczne i edukacyjne.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/rozdanie certyfikatow (6).webp',
+		alt: 'Rozdanie certyfikatow',
+		title: 'Rozdanie certyfikatow',
+		description: 'Dobry humor i wspaniała pogoda nie opuszczały uczestników ani na moment.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/rozdanie certyfikatow (7).webp',
+		alt: 'Rozdanie certyfikatow',
+		title: 'Rozdanie certyfikatow',
+		description: 'Kolejne piękne ujęcie z niezapomnianego programu Erasmus+.'
+	},
+	{
+		src: '../public/gallery/04-08/szkolenie/rozdanie certyfikatow (8).webp',
+		alt: 'Rozdanie certyfikatow',
+		title: 'Rozdanie certyfikatow',
+		description: 'Kolejne piękne ujęcie z niezapomnianego programu Erasmus+.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do bolonii (1).webp',
+		alt: 'Uroki Bolonii',
+		title: 'Uroki Bolonii',
+		description: 'Znakomite chwile spędzone podczas wycieczki do Bolonii.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do bolonii (10).webp',
+		alt: 'Uroki Bolonii',
+		title: 'Uroki Bolonii',
+		description: 'Znakomite chwile spędzone podczas wycieczki do Bolonii.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do bolonii (11).webp',
+		alt: 'Uroki Bolonii',
+		title: 'Uroki Bolonii',
+		description: 'Spacer po urokliwej Bolonii i podziwianie jej kunsztownej architektury.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do bolonii (12).webp',
+		alt: 'Uroki Bolonii',
+		title: 'Uroki Bolonii',
+		description: 'Znakomite chwile spędzone podczas wycieczki do Bolonii.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do bolonii (13).webp',
+		alt: 'Uroki Bolonii',
+		title: 'Uroki Bolonii',
+		description: 'Bolonia zachwyciła nas swoim klimatem ze wspaniałymi historycznymi miejscami.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do bolonii (14).webp',
+		alt: 'Uroki Bolonii',
+		title: 'Uroki Bolonii',
+		description: 'Spacer po urokliwej Bolonii i podziwianie jej kunsztownej architektury.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do bolonii (2).webp',
+		alt: 'Uroki Bolonii',
+		title: 'Uroki Bolonii',
+		description: 'Spacer po urokliwej Bolonii i podziwianie jej kunsztownej architektury.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do bolonii (3).webp',
+		alt: 'Uroki Bolonii',
+		title: 'Uroki Bolonii',
+		description: 'Spacer po urokliwej Bolonii i podziwianie jej kunsztownej architektury.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do bolonii (4).webp',
+		alt: 'Uroki Bolonii',
+		title: 'Uroki Bolonii',
+		description: 'Spacer po urokliwej Bolonii i podziwianie jej kunsztownej architektury.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do bolonii (5).webp',
+		alt: 'Uroki Bolonii',
+		title: 'Uroki Bolonii',
+		description: 'Bolonia zachwyciła nas swoim klimatem ze wspaniałymi historycznymi miejscami.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do bolonii (6).webp',
+		alt: 'Uroki Bolonii',
+		title: 'Uroki Bolonii',
+		description: 'Spacer po urokliwej Bolonii i podziwianie jej kunsztownej architektury.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do bolonii (7).webp',
+		alt: 'Uroki Bolonii',
+		title: 'Uroki Bolonii',
+		description: 'Znakomite chwile spędzone podczas wycieczki do Bolonii.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do bolonii (8).webp',
+		alt: 'Uroki Bolonii',
+		title: 'Uroki Bolonii',
+		description: 'Bolonia zachwyciła nas swoim klimatem ze wspaniałymi historycznymi miejscami.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do bolonii (9).webp',
+		alt: 'Uroki Bolonii',
+		title: 'Uroki Bolonii',
+		description: 'Bolonia zachwyciła nas swoim klimatem ze wspaniałymi historycznymi miejscami.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do wenecji (1).webp',
+		alt: 'Klimatyczna Wenecja',
+		title: 'Klimatyczna Wenecja',
+		description: 'Niesamowity widok urokliwych miejsc podczas wycieczki do przepięknej Wenecji.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do wenecji (10).webp',
+		alt: 'Klimatyczna Wenecja',
+		title: 'Klimatyczna Wenecja',
+		description: 'Niesamowity widok urokliwych miejsc podczas wycieczki do przepięknej Wenecji.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do wenecji (11).webp',
+		alt: 'Klimatyczna Wenecja',
+		title: 'Klimatyczna Wenecja',
+		description: 'Niesamowity widok urokliwych miejsc podczas wycieczki do przepięknej Wenecji.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do wenecji (12).webp',
+		alt: 'Klimatyczna Wenecja',
+		title: 'Klimatyczna Wenecja',
+		description: 'Niesamowity widok urokliwych miejsc podczas wycieczki do przepięknej Wenecji.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do wenecji (13).webp',
+		alt: 'Klimatyczna Wenecja',
+		title: 'Klimatyczna Wenecja',
+		description: 'Niesamowity widok urokliwych miejsc podczas wycieczki do przepięknej Wenecji.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do wenecji (14).webp',
+		alt: 'Klimatyczna Wenecja',
+		title: 'Klimatyczna Wenecja',
+		description: 'Niesamowity widok urokliwych miejsc podczas wycieczki do przepięknej Wenecji.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do wenecji (15).webp',
+		alt: 'Klimatyczna Wenecja',
+		title: 'Klimatyczna Wenecja',
+		description: 'Niesamowity widok urokliwych miejsc podczas wycieczki do przepięknej Wenecji.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do wenecji (16).webp',
+		alt: 'Klimatyczna Wenecja',
+		title: 'Klimatyczna Wenecja',
+		description: 'Niesamowity widok urokliwych miejsc podczas wycieczki do przepięknej Wenecji.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do wenecji (17).webp',
+		alt: 'Klimatyczna Wenecja',
+		title: 'Klimatyczna Wenecja',
+		description: 'Niesamowity widok urokliwych miejsc podczas wycieczki do przepięknej Wenecji.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do wenecji (2).webp',
+		alt: 'Klimatyczna Wenecja',
+		title: 'Klimatyczna Wenecja',
+		description: 'Niesamowity widok urokliwych miejsc podczas wycieczki do przepięknej Wenecji.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do wenecji (3).webp',
+		alt: 'Klimatyczna Wenecja',
+		title: 'Klimatyczna Wenecja',
+		description: 'Niesamowity widok urokliwych miejsc podczas wycieczki do przepięknej Wenecji.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do wenecji (4).webp',
+		alt: 'Klimatyczna Wenecja',
+		title: 'Klimatyczna Wenecja',
+		description: 'Niesamowity widok urokliwych miejsc podczas wycieczki do przepięknej Wenecji.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do wenecji (5).webp',
+		alt: 'Klimatyczna Wenecja',
+		title: 'Klimatyczna Wenecja',
+		description: 'Niesamowity widok urokliwych miejsc podczas wycieczki do przepięknej Wenecji.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do wenecji (6).webp',
+		alt: 'Klimatyczna Wenecja',
+		title: 'Klimatyczna Wenecja',
+		description: 'Niesamowity widok urokliwych miejsc podczas wycieczki do przepięknej Wenecji.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do wenecji (8).webp',
+		alt: 'Klimatyczna Wenecja',
+		title: 'Klimatyczna Wenecja',
+		description: 'Niesamowity widok urokliwych miejsc podczas wycieczki do przepięknej Wenecji.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/wycieczka do wenecji (9).webp',
+		alt: 'Klimatyczna Wenecja',
+		title: 'Klimatyczna Wenecja',
+		description: 'Niesamowity widok urokliwych miejsc podczas wycieczki do przepięknej Wenecji.'
+	},
+	{
+		src: '../public/gallery/04-08/zalucki/powrot do domu.webp',
+		alt: 'Powrot do domu',
+		title: 'Powrot do domu',
+		description: 'Uczniowie wracają do Polski po zakończeniu programu Erasmus+.'
 	}
 ];
 
