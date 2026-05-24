@@ -209,7 +209,7 @@ header::before {
 /* pasek ze zdjęciami */
 
 .pasek {
-    height: 22vh;
+    height: 24vh;
     overflow: hidden;
     background: #1a1a1a;
     display: flex;
@@ -231,6 +231,7 @@ header::before {
     display: block;
     flex-shrink: 0;
     opacity: 0.85;
+    margin: auto;
 }
 
 /* nagłówki sekcji */
