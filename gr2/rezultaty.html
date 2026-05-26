@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezultaty - ZSEiI Erasmus+</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<a href="#" class="do-gory">↑</a>
+
+<body>
+    <nav id="nav">
+        <div class="nav-top">
+            <a href="index.html" id="logo">Erasmus+</a>
+            <div class="nav-prawy">
+                <div class="social-ikony">
+                    <a href="https://www.youtube.com/@ErasmusELEKTRONIK" target="_blank" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100067838746263" target="_blank" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <ul id="nav-menu">
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="index.html#projekt">O projekcie</a></li>
+            <li><a href="index.html#uczestnicy">Lista uczestników</a></li>
+            <li><a href="index.html#opinie">Opinie uczestników</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="rezultaty.html">Rezultaty</a></li>
+            <li><a href="">Film promocyjny</a></li>
+            <li><a href="https://erasmus.zse.edu.pl/kalendarz/login">Kalendarz</a></li>
+        </ul>
+    </nav>
+
+    <section id="rezultaty">
+        <div class="sekcja-naglowek">
+            <h2>Rezultaty projektu</h2>
+            <p class="sekcja-opis">Prezentacje i plakaty z wyjazdu do Włoch</p>
+        </div>
+
+        <div class="rezultaty-kontener">
+            
+            <!-- PREZENTACJE -->
+            <div class="rezultaty-kategoria">
+                <h3 class="kategoria-tytul">Prezentacje</h3>
+                
+                <div>
+                    <div class="rezultat-item">
+                        <div class="rezultat-podglad">
+                            <img src="prezentacje/prezentacja1-preview.jpg" alt="Podgląd prezentacji">
+                            <div class="rezultat-overlay">
+                                <button class="btn-podglad" onclick="otworzPodglad('prezentacje/prezentacja1.pdf')">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" fill="currentColor"/>
+                                        <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Podgląd
+                                </button>
+                                <a href="prezentacje/prezentacja1.pdf" download class="btn-pobierz">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Pobierz
+                                </a>
+                            </div>
+                        </div>
+                        <div class="rezultat-info">
+                            <h4>Rimini</h4>
+                            <p class="rezultat-autor">Kacper Bulski</p>
+                        </div>
+                    </div>
+
+                    <div class="rezultat-item">
+                        <div class="rezultat-podglad">
+                            <img src="prezentacje/prezentacja2-preview.jpg" alt="Podgląd prezentacji">
+                            <div class="rezultat-overlay">
+                                <button class="btn-podglad" onclick="otworzPodglad('prezentacje/prezentacja2.pdf')">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" fill="currentColor"/>
+                                        <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Podgląd
+                                </button>
+                                <a href="prezentacje/prezentacja2.pdf" download class="btn-pobierz">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Pobierz
+                                </a>
+                            </div>
+                        </div>
+                        <div class="rezultat-info">
+                            <h4>Tytuł prezentacji 2</h4>
+                            <p class="rezultat-autor">(Imię Nazwisko)</p>
+                        </div>
+                    </div>
+
+                    <div class="rezultat-item">
+                        <div class="rezultat-podglad">
+                            <img src="prezentacje/prezentacja3-preview.jpg" alt="Podgląd prezentacji">
+                            <div class="rezultat-overlay">
+                                <button class="btn-podglad" onclick="otworzPodglad('prezentacje/prezentacja3.pdf')">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" fill="currentColor"/>
+                                        <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Podgląd
+                                </button>
+                                <a href="prezentacje/prezentacja3.pdf" download class="btn-pobierz">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Pobierz
+                                </a>
+                            </div>
+                        </div>
+                        <div class="rezultat-info">
+                            <h4>Tytuł prezentacji 3</h4>
+                            <p class="rezultat-autor">(Imię Nazwisko)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PLAKATY -->
+            <div class="rezultaty-kategoria">
+                <h3 class="kategoria-tytul">Plakaty</h3>
+                
+                <div>
+                    <div class="rezultat-item">
+                        <div class="rezultat-podglad">
+                            <img src="plakaty/plakat1-preview.jpg" alt="Podgląd plakatu">
+                            <div class="rezultat-overlay">
+                                <button class="btn-podglad" onclick="otworzPodglad('plakaty/plakat1.jpg')">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" fill="currentColor"/>
+                                        <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Podgląd
+                                </button>
+                                <a href="plakaty/plakat1.jpg" download class="btn-pobierz">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Pobierz
+                                </a>
+                            </div>
+                        </div>
+                        <div class="rezultat-info">
+                            <h4>Tytuł plakatu 1</h4>
+                            <p class="rezultat-autor">(Imię Nazwisko)</p>
+                        </div>
+                    </div>
+
+                    <div class="rezultat-item">
+                        <div class="rezultat-podglad">
+                            <img src="plakaty/plakat2-preview.jpg" alt="Podgląd plakatu">
+                            <div class="rezultat-overlay">
+                                <button class="btn-podglad" onclick="otworzPodglad('plakaty/plakat2.jpg')">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" fill="currentColor"/>
+                                        <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Podgląd
+                                </button>
+                                <a href="plakaty/plakat2.jpg" download class="btn-pobierz">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Pobierz
+                                </a>
+                            </div>
+                        </div>
+                        <div class="rezultat-info">
+                            <h4>Tytuł plakatu 2</h4>
+                            <p class="rezultat-autor">(Imię Nazwisko)</p>
+                        </div>
+                    </div>
+
+                    <div class="rezultat-item">
+                        <div class="rezultat-podglad">
+                            <img src="plakaty/plakat3-preview.jpg" alt="Podgląd plakatu">
+                            <div class="rezultat-overlay">
+                                <button class="btn-podglad" onclick="otworzPodglad('plakaty/plakat3.jpg')">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" fill="currentColor"/>
+                                        <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Podgląd
+                                </button>
+                                <a href="plakaty/plakat3.jpg" download class="btn-pobierz">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Pobierz
+                                </a>
+                            </div>
+                        </div>
+                        <div class="rezultat-info">
+                            <h4>Tytuł plakatu 3</h4>
+                            <p class="rezultat-autor">(Imię Nazwisko)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modal podglądu -->
+    <div id="modal-podglad" class="modal-podglad">
+        <div class="modal-content">
+            <button class="modal-zamknij" onclick="zamknijPodglad()">&times;</button>
+            <iframe id="modal-iframe" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <footer id="stopka">
+        <div class="stopka-srodek">
+            <div class="stopka-kolumna">
+                <a href="index.html" class="stopka-logo">Erasmus+</a>
+                <p>Praktyki zawodowe za granicą<br>dla uczniów ZSEiI w Sosnowcu</p>
+            </div>
+            <div class="stopka-kolumna">
+                <h4>Nawigacja</h4>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="index.html#projekt">O projekcie</a></li>
+                    <li><a href="index.html#uczestnicy">Lista uczestników</a></li>
+                    <li><a href="index.html#opinie">Opinie uczestników</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                </ul>
+            </div>
+            <div class="stopka-kolumna">
+                <h4>Kontakt</h4>
+                <p>Zespół Szkół Elektronicznych i Informatycznych</p>
+                <p>ul. Jagiellońska 13<br>41-200 Sosnowiec</p>
+                <p>sekretariat@zse.edu.pl</p>
+            </div>
+            <div class="stopka-kolumna">
+                <h4>Projekt</h4>
+                <p>Nr projektu:<br><span>2025-1PL01-KA121-VET-000310604</span></p>
+                <p>Dofinansowanie:<br><span>94 705 Euro</span></p>
+                <p><span><a href="https://zse.edu.pl/Site/147/szkolenia-zawodowe-we-wloszech-2025-2026" target="_blank">Dokumenty</a></p>
+            </div>
+        </div>
+        <div class="stopka-dol">
+            <p>&copy; 2026 ZSEiI Sosnowiec — Erasmus+</p>
+            <p>Strona stworzona przez: Ireneusz Nadwodny, Dorian Kasprzyk, Michał Gucwa</p>
+        </div>
+    </footer>
+
+    <script>
+        // przewijanie
+        window.onscroll = function() {
+            if (window.scrollY > 300) {
+                document.querySelector('.do-gory').classList.add('widoczna');
+            } else {
+                document.querySelector('.do-gory').classList.remove('widoczna');
+            }
+
+            if (window.scrollY > 50) {
+                document.querySelector('nav').classList.add('przewinieta');
+            } else {
+                document.querySelector('nav').classList.remove('przewinieta');
+            }
+        };
+
+        // hamburger
+        var hamburger = document.getElementById('hamburger');
+        var navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', function() {
+            var otwarty = navMenu.classList.toggle('otwarte');
+            hamburger.classList.toggle('otwarty');
+            hamburger.setAttribute('aria-expanded', otwarty);
+            document.getElementById('nav').classList.toggle('menu-otwarte', otwarty);
+        });
+
+        navMenu.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('otwarte');
+                hamburger.classList.remove('otwarty');
+                hamburger.setAttribute('aria-expanded', 'false');
+                document.getElementById('nav').classList.remove('menu-otwarte');
+            });
+        });
+
+        // modal podglądu
+        function otworzPodglad(url) {
+            var modal = document.getElementById('modal-podglad');
+            var iframe = document.getElementById('modal-iframe');
+            iframe.src = url;
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function zamknijPodglad() {
+            var modal = document.getElementById('modal-podglad');
+            var iframe = document.getElementById('modal-iframe');
+            modal.style.display = 'none';
+            iframe.src = '';
+            document.body.style.overflow = 'auto';
+        }
+
+        // zamknij modal po kliknięciu poza contentem
+        document.getElementById('modal-podglad').addEventListener('click', function(e) {
+            if (e.target === this) {
+                zamknijPodglad();
+            }
+        });
+
+        // ESC zamyka modal
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                zamknijPodglad();
+            }
+        });
+    </script>
+</body>
+</html>
