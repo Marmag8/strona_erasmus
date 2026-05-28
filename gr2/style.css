@@ -436,11 +436,63 @@ nav {
     background: #f5f4f0;
 }
 
-.uczestnicy-kontener {
+.uczestnicy-opiekunowie {
     display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
     justify-content: center;
+    gap: 30px;
+    padding: 30px 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.uczestnicy-opiekunowie .uczestnik-karta {
+    background: linear-gradient(135deg, #e8f4f8 0%, #d0e8f0 100%);
+    border: 2px solid #333;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    padding: 15px;
+    width: 200px;
+}
+
+.uczestnicy-opiekunowie .uczestnik-karta p {
+    font-weight: 600;
+    color: #333;
+    font-style: italic;
+}
+
+.uczestnicy-kontener {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .uczestnicy-kontener {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .uczestnicy-opiekunowie {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .uczestnicy-kontener {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .uczestnicy-kontener {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
 }
 
 .uczestnik-karta {
@@ -451,6 +503,7 @@ nav {
     padding: 20px;
     text-align: center;
     transition: 0.3s;
+    justify-self: center;
 }
 
 .uczestnik-karta:hover {
@@ -479,6 +532,8 @@ nav {
     color: #888;
     font-weight: 400;
 }
+
+
 
 /* opinie */
 
