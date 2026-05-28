@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria – ZSEiI Erasmus+</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
     <link rel="preload" as="image" href="background.jpg">
     <link rel="stylesheet" href="style.css">
 
@@ -427,7 +429,11 @@
         <img src="background.jpg" alt="" class="bg" fetchpriority="high" aria-hidden="true">
         <nav id="nav">
             <div class="nav-top">
-                <a href="index.html" id="logo">Erasmus+</a>
+                <a href="../" class="btn-powrot" aria-label="Powrót">←</a>
+                <a href="index.html" id="logo">
+                    <img src="favicon.png" alt="" class="logo-icon">
+                    Erasmus+
+                </a>
                 <div class="nav-prawy">
                     <div class="social-ikony">
                         <a href="https://www.youtube.com/@ErasmusELEKTRONIK" target="_blank" class="social-link">
@@ -1050,10 +1056,6 @@
                 <div class="podpis">Zwiedzanie</div>
             </div>
             <div class="element" kategoria="zwiedzanie">
-                <img src="zdjecia/zwiedzanie/z145.jpg" loading="lazy" alt="Zwiedzanie">
-                <div class="podpis">Zwiedzanie</div>
-            </div>
-            <div class="element" kategoria="zwiedzanie">
                 <img src="zdjecia/zwiedzanie/z146.jpg" loading="lazy" alt="Zwiedzanie">
                 <div class="podpis">Zwiedzanie</div>
             </div>
@@ -1403,16 +1405,19 @@
     <footer id="stopka">
     <div class="stopka-srodek">
         <div class="stopka-kolumna">
-            <a href="index.html" class="stopka-logo">Erasmus+</a>
+            <a href="index.html" class="stopka-logo">
+                <img src="favicon.png" alt="" class="logo-icon">
+                Erasmus+
+            </a>
             <p>Praktyki zawodowe za granicą<br>dla uczniów ZSEiI w Sosnowcu</p>
         </div>
         <div class="stopka-kolumna">
             <h4>Nawigacja</h4>
             <ul>
-                <li><a href="">Strona główna</a></li>
-                <li><a href="#projekt">O projekcie</a></li>
-                <li><a href="#uczestnicy">Lista uczestników</a></li>
-                <li><a href="#opinie">Opinie uczestników</a></li>
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="index.html#projekt">O projekcie</a></li>
+                <li><a href="index.html#uczestnicy">Lista uczestników</a></li>
+                <li><a href="index.html#opinie">Opinie uczestników</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
             </ul>
         </div>
@@ -1426,7 +1431,7 @@
             <h4>Projekt</h4>
             <p>Nr projektu:<br><span>2025-1PL01-KA121-VET-000310604</span></p>
             <p>Dofinansowanie:<br><span>94 705 Euro</span></p>
-            <p><span><a href="https://zse.edu.pl/Site/147/szkolenia-zawodowe-we-wloszech-2025-2026" target="_blank">Dokumenty</a></p>
+            <p><span><a href="https://zse.edu.pl/Site/147/szkolenia-zawodowe-we-wloszech-2025-2026" target="_blank">Dokumenty</a></span></p>
         </div>
     </div>
     <div class="stopka-dol">
@@ -1471,154 +1476,182 @@
         });
 
         // paginacja + filtrowanie
-        var NA_STRONE = 12;
-        var aktualnaStrona = 1;
-        var aktualnaKategoria = 'wszystkie';
+var NA_STRONE = 12;
+var aktualnaStrona = 1;
+var aktualnaKategoria = 'wszystkie';
 
-        var wszystkieElementy = Array.from(document.querySelectorAll('.element'));
-        var przyciski = document.querySelectorAll('.filtry button');
+var wszystkieElementy = Array.from(document.querySelectorAll('.element'));
+var przyciski = document.querySelectorAll('.filtry button');
 
-        function filtrowane() {
-            return wszystkieElementy.filter(function(el) {
-                return aktualnaKategoria === 'wszystkie' || el.getAttribute('kategoria') === aktualnaKategoria;
-            });
+function filtrowane() {
+    return wszystkieElementy.filter(function(el) {
+        return aktualnaKategoria === 'wszystkie' || el.getAttribute('kategoria') === aktualnaKategoria;
+    });
+}
+
+function renderuj() {
+    var lista = filtrowane();
+    var totalStron = Math.ceil(lista.length / NA_STRONE);
+    var start = (aktualnaStrona - 1) * NA_STRONE;
+    var koniec = start + NA_STRONE;
+
+    wszystkieElementy.forEach(function(el) { el.style.display = 'none'; });
+
+    lista.slice(start, koniec).forEach(function(el) {
+        el.style.display = '';
+        el.style.animation = 'pojawienie 0.35s ease';
+    });
+
+    renderujPaginacje(totalStron);
+}
+
+function renderujPaginacje(total) {
+    var pag = document.getElementById('paginacja');
+    pag.innerHTML = '';
+
+    if (total <= 1) return;
+
+    function btn(label, strona, aktywna, disabled) {
+        var b = document.createElement('button');
+        b.textContent = label;
+        if (aktywna) b.classList.add('aktywna');
+        if (label === '←' || label === '→') b.classList.add('strzalka-str');
+        if (disabled) {
+            b.disabled = true;
+            b.style.opacity = '0.3';
         }
-
-        function renderuj() {
-            var lista = filtrowane();
-            var totalStron = Math.ceil(lista.length / NA_STRONE);
-            var start = (aktualnaStrona - 1) * NA_STRONE;
-            var koniec = start + NA_STRONE;
-
-            wszystkieElementy.forEach(function(el) { el.style.display = 'none'; });
-
-            lista.slice(start, koniec).forEach(function(el) {
-                el.style.display = '';
-                el.style.animation = 'pojawienie 0.35s ease';
-            });
-
-            renderujPaginacje(totalStron);
-        }
-
-        function renderujPaginacje(total) {
-            var pag = document.getElementById('paginacja');
-            pag.innerHTML = '';
-
-            if (total <= 1) return;
-
-            function btn(label, strona, aktywna, disabled) {
-                var b = document.createElement('button');
-                b.textContent = label;
-                if (aktywna) b.classList.add('aktywna');
-                if (label === '←' || label === '→') b.classList.add('strzalka-str');
-                if (disabled) {
-                    b.disabled = true;
-                    b.style.opacity = '0.3';
-                }
-                b.addEventListener('click', function() {
-                    aktualnaStrona = strona;
-                    renderuj();
-                    window.scrollTo({ top: document.querySelector('.sekcja-galeria').offsetTop - 80, behavior: 'smooth' });
-                });
-                pag.appendChild(b);
-            }
-
-            btn('←', aktualnaStrona - 1, false, aktualnaStrona === 1);
-
-            for (var i = 1; i <= total; i++) {
-                // zawsze pokaż 1, ostatnią, aktualną i sąsiednie; resztę jako "..."
-                if (i === 1 || i === total || (i >= aktualnaStrona - 2 && i <= aktualnaStrona + 2)) {
-                    btn(i, i, i === aktualnaStrona, false);
-                } else if (i === aktualnaStrona - 3 || i === aktualnaStrona + 3) {
-                    var dots = document.createElement('button');
-                    dots.textContent = '…';
-                    dots.disabled = true;
-                    dots.style.opacity = '0.4';
-                    dots.style.cursor = 'default';
-                    pag.appendChild(dots);
-                }
-            }
-
-            btn('→', aktualnaStrona + 1, false, aktualnaStrona === total);
-        }
-
-        przyciski.forEach(function(btn) {
-            btn.addEventListener('click', function() {
-                przyciski.forEach(function(b) { b.classList.remove('aktywny'); });
-                btn.classList.add('aktywny');
-                aktualnaKategoria = btn.dataset.filtr;
-                aktualnaStrona = 1;
-                renderuj();
-            });
+        b.addEventListener('click', function() {
+            aktualnaStrona = strona;
+            renderuj();
+            window.scrollTo({ top: document.querySelector('.sekcja-galeria').offsetTop - 80, behavior: 'smooth' });
         });
+        pag.appendChild(b);
+    }
 
+    btn('←', aktualnaStrona - 1, false, aktualnaStrona === 1);
+
+    for (var i = 1; i <= total; i++) {
+        if (i === 1 || i === total || (i >= aktualnaStrona - 2 && i <= aktualnaStrona + 2)) {
+            btn(i, i, i === aktualnaStrona, false);
+        } else if (i === aktualnaStrona - 3 || i === aktualnaStrona + 3) {
+            var dots = document.createElement('button');
+            dots.textContent = '…';
+            dots.disabled = true;
+            dots.style.opacity = '0.4';
+            dots.style.cursor = 'default';
+            pag.appendChild(dots);
+        }
+    }
+
+    btn('→', aktualnaStrona + 1, false, aktualnaStrona === total);
+}
+
+przyciski.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        przyciski.forEach(function(b) { b.classList.remove('aktywny'); });
+        btn.classList.add('aktywny');
+        aktualnaKategoria = btn.dataset.filtr;
+        aktualnaStrona = 1;
         renderuj();
+    });
+});
 
-        // podglad zdjecia
-        var podglad = document.getElementById('podglad');
-        var zdjeciePodglad = document.getElementById('zdjeciePodglad');
-        var licznikPodglad = document.getElementById('licznik');
-        var widoczne = [];
-        var nrZdjecia = 0;
+renderuj();
 
-        function pobierzWidoczne() {
-            return wszystkieElementy.filter(function(el) {
-                return el.style.display !== 'none';
-            });
-        }
+// podglad zdjecia z obsługą paginacji
+var podglad = document.getElementById('podglad');
+var zdjeciePodglad = document.getElementById('zdjeciePodglad');
+var licznikPodglad = document.getElementById('licznik');
+var wszystkieFiltrowane = filtrowane();
+var nrGlobalny = 0;
 
-        function otworz(nr) {
-            widoczne = pobierzWidoczne();
-            nrZdjecia = nr;
-            pokazPodglad();
-            podglad.classList.add('widoczny');
-            document.body.style.overflow = 'hidden';
-        }
+function pobierzWszystkie() {
+    return filtrowane();
+}
 
-        function pokazPodglad() {
-            var obr = widoczne[nrZdjecia].querySelector('img');
-            zdjeciePodglad.src = obr.src;
-            zdjeciePodglad.alt = obr.alt;
-            licznikPodglad.textContent = (nrZdjecia + 1) + ' / ' + widoczne.length;
-        }
+function otworz(element) {
+    wszystkieFiltrowane = pobierzWszystkie();
+    var nr = wszystkieFiltrowane.indexOf(element);
+    if (nr === -1) return;
+    nrGlobalny = nr;
+    
+    // Oblicz na której stronie jest to zdjęcie
+    var strona = Math.floor(nr / NA_STRONE) + 1;
+    if (strona !== aktualnaStrona) {
+        aktualnaStrona = strona;
+        renderuj();
+    }
+    
+    pokazPodglad();
+    podglad.classList.add('widoczny');
+    document.body.style.overflow = 'hidden';
+}
 
-        function zamknij() {
-            podglad.classList.remove('widoczny');
-            document.body.style.overflow = '';
-        }
+function pokazPodglad() {
+    var obr = wszystkieFiltrowane[nrGlobalny].querySelector('img');
+    zdjeciePodglad.src = obr.src;
+    zdjeciePodglad.alt = obr.alt;
+    licznikPodglad.textContent = (nrGlobalny + 1) + ' / ' + wszystkieFiltrowane.length;
+}
 
-        document.getElementById('btnZamknij').addEventListener('click', zamknij);
+function zamknij() {
+    podglad.classList.remove('widoczny');
+    document.body.style.overflow = '';
+}
 
-        podglad.addEventListener('click', function(e) {
-            if (e.target === podglad) zamknij();
-        });
+document.getElementById('btnZamknij').addEventListener('click', zamknij);
 
-        document.getElementById('btnPoprzednie').addEventListener('click', function(e) {
-            e.stopPropagation();
-            nrZdjecia = (nrZdjecia - 1 + widoczne.length) % widoczne.length;
-            pokazPodglad();
-        });
+podglad.addEventListener('click', function(e) {
+    if (e.target === podglad) zamknij();
+});
 
-        document.getElementById('btnNastepne').addEventListener('click', function(e) {
-            e.stopPropagation();
-            nrZdjecia = (nrZdjecia + 1) % widoczne.length;
-            pokazPodglad();
-        });
+function nastepne() {
+    wszystkieFiltrowane = pobierzWszystkie();
+    nrGlobalny = (nrGlobalny + 1) % wszystkieFiltrowane.length;
+    
+    var strona = Math.floor(nrGlobalny / NA_STRONE) + 1;
+    if (strona !== aktualnaStrona) {
+        aktualnaStrona = strona;
+        renderuj();
+    }
+    pokazPodglad();
+}
 
-        document.addEventListener('keydown', function(e) {
-            if (!podglad.classList.contains('widoczny')) return;
-            if (e.key === 'Escape') zamknij();
-            if (e.key === 'ArrowLeft') { nrZdjecia = (nrZdjecia - 1 + widoczne.length) % widoczne.length; pokazPodglad(); }
-            if (e.key === 'ArrowRight') { nrZdjecia = (nrZdjecia + 1) % widoczne.length; pokazPodglad(); }
-        });
+function poprzednie() {
+    wszystkieFiltrowane = pobierzWszystkie();
+    nrGlobalny = (nrGlobalny - 1 + wszystkieFiltrowane.length) % wszystkieFiltrowane.length;
+    
+    var strona = Math.floor(nrGlobalny / NA_STRONE) + 1;
+    if (strona !== aktualnaStrona) {
+        aktualnaStrona = strona;
+        renderuj();
+    }
+    pokazPodglad();
+}
 
-        wszystkieElementy.forEach(function(el) {
-            el.addEventListener('click', function() {
-                var lista = pobierzWidoczne();
-                var nr = lista.indexOf(el);
-                otworz(nr);
-            });
-        });
+document.getElementById('btnPoprzednie').addEventListener('click', function(e) {
+    e.stopPropagation();
+    poprzednie();
+});
+
+document.getElementById('btnNastepne').addEventListener('click', function(e) {
+    e.stopPropagation();
+    nastepne();
+});
+
+document.addEventListener('keydown', function(e) {
+    if (!podglad.classList.contains('widoczny')) return;
+    if (e.key === 'Escape') zamknij();
+    if (e.key === 'ArrowLeft') poprzednie();
+    if (e.key === 'ArrowRight') nastepne();
+});
+
+// Kliknięcie na element galerii
+wszystkieElementy.forEach(function(el) {
+    el.addEventListener('click', function() {
+        otworz(el);
+    });
+});
     </script>
 
 </body>

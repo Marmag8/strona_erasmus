@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezultaty - ZSEiI Erasmus+</title>
+    
+    <!-- Favicon - różne wersje dla lepszej kompatybilności -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.png">
+    
     <link rel="stylesheet" href="style.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,12 +18,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
-<a href="#" class="do-gory">↑</a>
-
 <body>
+    <a href="#" class="do-gory">↑</a>
+
     <nav id="nav">
         <div class="nav-top">
-            <a href="index.html" id="logo">Erasmus+</a>
+            <a href="../" class="btn-powrot" aria-label="Powrót">←</a>
+            <a href="index.html" id="logo">
+                <img src="favicon.png" alt="" class="logo-icon">
+                Erasmus+
+            </a>
             <div class="nav-prawy">
                 <div class="social-ikony">
                     <a href="https://www.youtube.com/@ErasmusELEKTRONIK" target="_blank" class="social-link">
@@ -285,7 +296,10 @@
     <footer id="stopka">
         <div class="stopka-srodek">
             <div class="stopka-kolumna">
-                <a href="index.html" class="stopka-logo">Erasmus+</a>
+                <a href="index.html" class="stopka-logo">
+                    <img src="favicon.png" alt="" class="logo-icon">
+                    Erasmus+
+                </a>
                 <p>Praktyki zawodowe za granicą<br>dla uczniów ZSEiI w Sosnowcu</p>
             </div>
             <div class="stopka-kolumna">
@@ -308,7 +322,7 @@
                 <h4>Projekt</h4>
                 <p>Nr projektu:<br><span>2025-1PL01-KA121-VET-000310604</span></p>
                 <p>Dofinansowanie:<br><span>94 705 Euro</span></p>
-                <p><span><a href="https://zse.edu.pl/Site/147/szkolenia-zawodowe-we-wloszech-2025-2026" target="_blank">Dokumenty</a></p>
+                <p><span><a href="https://zse.edu.pl/Site/147/szkolenia-zawodowe-we-wloszech-2025-2026" target="_blank">Dokumenty</a></span></p>
             </div>
         </div>
         <div class="stopka-dol">
@@ -355,11 +369,20 @@
 
         // modal podglądu
         function otworzPodglad(url) {
-            var modal = document.getElementById('modal-podglad');
-            var iframe = document.getElementById('modal-iframe');
-            iframe.src = url;
-            modal.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
+            // Sprawdź czy to iOS (iPhone/iPad/iPod)
+            var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+            
+            if (isIOS) {
+                // Na iOS otwórz PDF w nowej karcie (Safari nie obsługuje PDF w iframe)
+                window.open(url, '_blank');
+            } else {
+                // Na innych urządzeniach użyj modalu
+                var modal = document.getElementById('modal-podglad');
+                var iframe = document.getElementById('modal-iframe');
+                iframe.src = url;
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
         }
 
         function zamknijPodglad() {
