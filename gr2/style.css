@@ -25,6 +25,7 @@ body {
     width: auto;
 }
 
+
 #nav .nav-top {
     position: relative;
     display: flex;
@@ -33,6 +34,7 @@ body {
     padding: 0;
     margin: 0;
 }
+
 
 #nav .btn-powrot {
     font-size: 1.5em;
@@ -59,6 +61,11 @@ body {
 #nav .nav-prawy {
     padding: 0;
     margin: 0;
+}
+
+#nav{
+    display: flex;
+    align-content: space-between;
 }
 
 @media (max-width: 768px) {
@@ -123,6 +130,10 @@ nav {
     gap: 2em;
 }
 
+#odstep{
+    width: 20%;
+}
+
 nav.przewinieta {
     background: rgba(20, 20, 20, 0.98);
     box-shadow: 0 2px 25px rgba(0,0,0,0.4);
@@ -176,6 +187,7 @@ nav ul {
     display: flex;
     list-style-type: none;
     gap: 2em;
+    text-align: center;
 }
 
 nav li a {
@@ -1354,6 +1366,55 @@ nav {
 }
 
 /* orientacja pozioma na telefonach */
+@media(max-width: 1280px){
+    .hamburger {
+        display: flex;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        padding: 0.8em 1.5em;
+        gap: 0;
+    }
+
+    .nav-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav-prawy {
+        margin-left: 0;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        padding: 8px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        margin-top: 8px;
+    }
+
+    nav ul.otwarte {
+        display: flex;
+        background: rgba(20, 20, 20, 0.97);
+        padding: 8px 16px 12px;
+        border-radius: 0 0 8px 8px;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 8px 4px;
+        font-size: 0.85rem;
+    }
+
+    nav.menu-otwarte {
+        background: rgba(20, 20, 20, 0.97);
+    }
+}
 
 @media (max-width: 1024px) and (orientation: landscape) {
     .hamburger {
